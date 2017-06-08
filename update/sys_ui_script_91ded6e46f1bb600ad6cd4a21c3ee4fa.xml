@@ -13,6 +13,7 @@ myApp.controller('CallReferralsController', ['$scope', function ($scope) {
     
 	$scope.async = 0;
 	$scope.suppliesAll = [];
+	$scope.buttonCSS = "btn-default btn btn-lg btn-block";
 	$scope.depts = [{//hard coded for now smh
 		"name": "Human Resources",
 		"value": "hr"
@@ -26,7 +27,9 @@ myApp.controller('CallReferralsController', ['$scope', function ($scope) {
 	//$scope.suppliesAll = supplyReferences;
 	$scope.async = 1;
 	// - - - -End Init - - - -//
-	
+	$scope.setActiveButton = function(dept, button) {
+		
+	};
 	//Calls script include to submit records manually
 	$scope.submit = function (dept) {			
 			//Call to server to actually submit
@@ -38,35 +41,6 @@ myApp.controller('CallReferralsController', ['$scope', function ($scope) {
 	};
 }])// - - -END Controller- - - //
 
-.directive('customAutofocus', function() {
-  return{
-         restrict: 'A',
-
-         link: function(scope, element, attrs){
-           scope.$watch(function(){
-             return scope.$eval(attrs.customAutofocus);
-             },function (newValue){
-               if (newValue == true){
-                   element[0].focus();
-               }
-           });
-         }
-     };
-})//End Directive//
-
-/* Provides autopopulated dropdown menu. 
-*/
-.directive('customDropdown', function() {
-	return {
-		restrict: 'C',
-		template : 
-			'<datalist id="supplyList">' +
-			'<div ng-repeat="sup in suppliesAll track by $index">' +
-				'<option value="{{sup.supply_type}}">' + 
-			'</div>' +
-			'</datalist>'
-	};
-})//- - End Directive - - //
 
 ;//- - - - -End App- - - - -//
 
@@ -128,7 +102,7 @@ function getSupplyReferences() {
         <sys_created_on>2017-06-08 20:24:34</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>91ded6e46f1bb600ad6cd4a21c3ee4fa</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_name>x_casus_callref.angular_controller</sys_name>
         <sys_package display_value="Service Desk Call Referrals" source="x_casus_callref">158840a62b69e2009ecc78cef6da155d</sys_package>
         <sys_policy/>
@@ -136,7 +110,7 @@ function getSupplyReferences() {
         <sys_scope display_value="Service Desk Call Referrals">158840a62b69e2009ecc78cef6da155d</sys_scope>
         <sys_update_name>sys_ui_script_91ded6e46f1bb600ad6cd4a21c3ee4fa</sys_update_name>
         <sys_updated_by>gg622</sys_updated_by>
-        <sys_updated_on>2017-06-08 21:31:42</sys_updated_on>
+        <sys_updated_on>2017-06-08 22:29:47</sys_updated_on>
         <use_scoped_format>false</use_scoped_format>
     </sys_ui_script>
 </record_update>
