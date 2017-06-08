@@ -6,58 +6,38 @@
         <global>false</global>
         <name>x_casus_callref.angular_controller</name>
         <script><![CDATA[var myApp = angular.module('myApp', []);
-var callReferences = []; // (Global)
+var callReferences = []; // (Global) not currently used
 
 // - - - Begin Controller - - - //
-myApp.controller('CallReferralsController', ['$scope', function ($scope, suppliesFactory) {
+myApp.controller('CallReferralsController', ['$scope', function ($scope) {
     
 	$scope.async = 0;
 	$scope.suppliesAll = [];
-	$scope.depts = [{
+	$scope.depts = [{//hard coded for now smh
 		"name": "Human Resources",
 		"value": "hr"
 	},{
-		"name": "Human Resources",
-		"value": "hr"
+		"name": "Registrar",
+		"value": "university_registrar"
+	},{
+		"name": "Library",
+		"value": "university_library"
 	}];
-	//Set default to current date
-	$scope.data.supply[0].received_date = $scope.currentDate;
-	$scope.suppliesAll = supplyReferences;
+	//$scope.suppliesAll = supplyReferences;
 	$scope.async = 1;
 	// - - - -End Init - - - -//
-
-	//This deletes the panel and it's information.
-	$scope.close = function(index) {
-		//Removes the data from array, thus removing the html elements
-		$scope.data.supply.splice(index,1);
-	};
 	
 	//Calls script include to submit records manually
-	$scope.submitAll = function () {
-		//Loop through each data, call server to submit
-			
+	$scope.submit = function (dept) {			
 			//Call to server to actually submit
-			var ajax = new GlideAjax('x_casus_printsmart.submitMultiple');
-			ajax.addParam('sysparm_name','submitSupplyReceived');
-			ajax.addParam('sysparm_supply_type', supID);
-			ajax.addParam('sysparm_quantity_received', supQuantity);
-			ajax.addParam('sysparm_received_date', supDate);
+			var ajax = new GlideAjax('x_casus_callref.retrieveSubmitRecords');
+			ajax.addParam('sysparm_name','submitRecord');
+			ajax.addParam('sysparm_department', dept);
 			ajax.getXML(function ()  {
 			});
-		//Redirect user
-		var url = location.hostname;
-		window.location = url + '/x_casus_printsmart_supplies_received_list.do';
 	};
-
-	
 }])// - - -END Controller- - - //
 
-
-
-/* This is used to autofocus the first field after dynamically adding a new obj
-Place custom-autofocus html attribute into the desired field like so custom-autofocus="$index == focusIndex"
-Must be used in ng-repeat
-*/
 .directive('customAutofocus', function() {
   return{
          restrict: 'A',
@@ -83,20 +63,6 @@ Must be used in ng-repeat
 			'<datalist id="supplyList">' +
 			'<div ng-repeat="sup in suppliesAll track by $index">' +
 				'<option value="{{sup.supply_type}}">' + 
-			'</div>' +
-			'</datalist>'
-	};
-})//- - End Directive - - //
-
-/* Provides autopopulated dropdown menu. 
-*/
-.directive('locationDropdown', function() {
-	return {
-		restrict: 'C',
-		template : 
-			'<datalist id="locationList">' +
-			'<div ng-repeat="sup in locationsAll track by $index">' +
-				'<option value="{{sup.location}}">' + 
 			'</div>' +
 			'</datalist>'
 	};
@@ -155,27 +121,14 @@ function getSupplyReferences() {
 	ajax.getXMLWait();
 	//Now the supply references should have data (sys_id and supply_type)
 	return supplyReferences;
-}
-
-/*
-Uses a global variable to store all the locations
-*/
-function getLocationReferences() {
-	var ajax = new GlideAjax('x_casus_printsmart.submitMultiple');
-	ajax.addParam('sysparm_name','getLocationReferences');
-	ajax.getXML(handleLocationReferences);
-	ajax.getXMLWait();
-	//Now the supply references should have data (sys_id and supply_type)
-	return supplyReferences;
-}
-]]></script>
+}]]></script>
         <script_name>angular_controller</script_name>
         <sys_class_name>sys_ui_script</sys_class_name>
         <sys_created_by>gg622</sys_created_by>
         <sys_created_on>2017-06-08 20:24:34</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>91ded6e46f1bb600ad6cd4a21c3ee4fa</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>x_casus_callref.angular_controller</sys_name>
         <sys_package display_value="Service Desk Call Referrals" source="x_casus_callref">158840a62b69e2009ecc78cef6da155d</sys_package>
         <sys_policy/>
@@ -183,7 +136,7 @@ function getLocationReferences() {
         <sys_scope display_value="Service Desk Call Referrals">158840a62b69e2009ecc78cef6da155d</sys_scope>
         <sys_update_name>sys_ui_script_91ded6e46f1bb600ad6cd4a21c3ee4fa</sys_update_name>
         <sys_updated_by>gg622</sys_updated_by>
-        <sys_updated_on>2017-06-08 20:58:40</sys_updated_on>
+        <sys_updated_on>2017-06-08 21:31:42</sys_updated_on>
         <use_scoped_format>false</use_scoped_format>
     </sys_ui_script>
 </record_update>

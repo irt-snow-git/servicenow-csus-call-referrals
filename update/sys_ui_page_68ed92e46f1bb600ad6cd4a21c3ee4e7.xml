@@ -10,11 +10,25 @@
 <j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
 <script language="javascript" src="https://code.angularjs.org/1.4.0-beta.4/angular.js" />
 <script src="x_casus_callref.angular_controller.jsdbx"></script>
+<style>
+.btn-primary {
+    color: #fff;
+    background-color: #278efc;
+    border-color: #0368d4;
+}
+</style>
 	
 <div ng-app="myApp">
 	
 	<div class="container full-height" id="main-div">
 		<div ng-controller="CallReferralsController">
+			<div class="center-block" style="max-width:400px">
+				<div ng-repeat="dept in depts track by $index" style="padding:10px">
+					<button type="button" class="btn btn-default btn-lg btn-block" style="padding: 10px" ng-click="submit(dept.value)">
+						{{dept.name}}
+					</button>
+				</div>
+			</div>
 			
 		</div>
 	</div>
@@ -28,7 +42,7 @@
         <sys_created_on>2017-06-08 20:29:22</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>68ed92e46f1bb600ad6cd4a21c3ee4e7</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>Submit Call Referral</sys_name>
         <sys_package display_value="Service Desk Call Referrals" source="x_casus_callref">158840a62b69e2009ecc78cef6da155d</sys_package>
         <sys_policy/>
@@ -36,6 +50,6 @@
         <sys_scope display_value="Service Desk Call Referrals">158840a62b69e2009ecc78cef6da155d</sys_scope>
         <sys_update_name>sys_ui_page_68ed92e46f1bb600ad6cd4a21c3ee4e7</sys_update_name>
         <sys_updated_by>gg622</sys_updated_by>
-        <sys_updated_on>2017-06-08 20:29:22</sys_updated_on>
+        <sys_updated_on>2017-06-08 21:39:41</sys_updated_on>
     </sys_ui_page>
 </record_update>

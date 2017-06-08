@@ -14,8 +14,8 @@ retrieveSubmitRecords.prototype = Object.extendsObject(global.AbstractAjaxProces
 		
 		var gr = new GlideRecord('x_casus_callref_call_referrals');
 		gr.initialize(); 
-		gr.department = this.getParameter('sysparm_deptartment'); //choice value
-		gr.details = this.getParameter('sysparm_details');        //choice value
+		gr.department = this.getParameter('sysparm_department'); //choice value
+		//gr.details = this.getParameter('sysparm_details');        //choice value
 		gr.insert();
 		return true;
 	},
@@ -27,7 +27,7 @@ retrieveSubmitRecords.prototype = Object.extendsObject(global.AbstractAjaxProces
         <sys_created_on>2017-06-08 20:36:37</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>45712aa86f1bb600ad6cd4a21c3ee4f7</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>retrieveSubmitRecords</sys_name>
         <sys_package display_value="Service Desk Call Referrals" source="x_casus_callref">158840a62b69e2009ecc78cef6da155d</sys_package>
         <sys_policy>read</sys_policy>
@@ -35,6 +35,6 @@ retrieveSubmitRecords.prototype = Object.extendsObject(global.AbstractAjaxProces
         <sys_scope display_value="Service Desk Call Referrals">158840a62b69e2009ecc78cef6da155d</sys_scope>
         <sys_update_name>sys_script_include_45712aa86f1bb600ad6cd4a21c3ee4f7</sys_update_name>
         <sys_updated_by>gg622</sys_updated_by>
-        <sys_updated_on>2017-06-08 20:46:30</sys_updated_on>
+        <sys_updated_on>2017-06-08 21:17:12</sys_updated_on>
     </sys_script_include>
 </record_update>
