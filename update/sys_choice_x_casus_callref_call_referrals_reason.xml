@@ -1,0 +1,725 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="reason" table="x_casus_callref_call_referrals" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>reason</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Dropped Classes</label>
+            <language>en</language>
+            <name>x_casus_callref_call_referrals</name>
+            <sequence/>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2016-09-28 19:36:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>471bdfc70f86a24012e4348ce1050eaa</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2016-09-28 19:36:50</sys_updated_on>
+            <value/>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>academic_advising_center</dependent_value>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Academic Advising/Smart Planner</label>
+            <language>en</language>
+            <name>x_casus_callref_call_referrals</name>
+            <sequence/>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2016-09-09 22:50:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>ff01d2810f75aa0012e4348ce1050e00</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2016-09-21 22:58:32</sys_updated_on>
+            <value>academic_advising</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>cce</dependent_value>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Account Creation Issue</label>
+            <language>en</language>
+            <name>x_casus_callref_call_referrals</name>
+            <sequence/>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2016-09-26 19:43:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>1af8c1ee2b8e6e009ecc78cef6da152b</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2016-09-26 19:43:38</sys_updated_on>
+            <value>account_creation_issue</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>admissions_and_outreach</dependent_value>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Account Re-enablement</label>
+            <language>en</language>
+            <name>x_casus_callref_call_referrals</name>
+            <sequence/>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2016-09-26 19:31:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>16c6892e2b8e6e009ecc78cef6da1593</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2016-09-26 19:40:23</sys_updated_on>
+            <value>account_reenable</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>atcs</dependent_value>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Broken Course Links</label>
+            <language>en</language>
+            <name>x_casus_callref_call_referrals</name>
+            <sequence/>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2016-09-26 19:37:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>8c08c12e2b8e6e009ecc78cef6da156f</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2016-09-26 19:37:22</sys_updated_on>
+            <value>broken_course_links</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>other</dependent_value>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>General Campus Information</label>
+            <language>en</language>
+            <name>x_casus_callref_call_referrals</name>
+            <sequence/>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2016-09-09 22:52:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>9dc196010f75aa0012e4348ce1050e16</sys_id>
+            <sys_mod_count>9</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2016-09-28 19:33:39</sys_updated_on>
+            <value>campus_info</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>university_library</dependent_value>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Checkout Fees</label>
+            <language>en</language>
+            <name>x_casus_callref_call_referrals</name>
+            <sequence/>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2016-09-26 20:26:53</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>cc731da62bce6e009ecc78cef6da15bf</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2016-09-26 20:27:13</sys_updated_on>
+            <value>checkout_fees</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>learning_space_services</dependent_value>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Classroom Assistance</label>
+            <language>en</language>
+            <name>x_casus_callref_call_referrals</name>
+            <sequence/>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2016-09-21 23:05:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>2db704050f4aee0012e4348ce1050e52</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2016-09-28 16:25:24</sys_updated_on>
+            <value>classroom_assistance</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>atcs</dependent_value>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Course Activation</label>
+            <language>en</language>
+            <name>x_casus_callref_call_referrals</name>
+            <sequence/>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2016-09-26 19:38:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>f648c1ae2b8e6e009ecc78cef6da15db</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2016-09-26 19:39:13</sys_updated_on>
+            <value>course_activation</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>atcs</dependent_value>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Course Setup</label>
+            <language>en</language>
+            <name>x_casus_callref_call_referrals</name>
+            <sequence/>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2016-09-26 19:37:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>6a2885ae2b8e6e009ecc78cef6da15bf</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2016-09-26 19:40:14</sys_updated_on>
+            <value>course_setup</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>atcs</dependent_value>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Incorrect Display Name in SacCT</label>
+            <language>en</language>
+            <name>x_casus_callref_call_referrals</name>
+            <sequence/>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2016-09-26 19:36:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>52f64d2e2b8e6e009ecc78cef6da1597</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2016-09-26 19:36:55</sys_updated_on>
+            <value>incorrect_name</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>admissions_and_outreach</dependent_value>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Incorrect Record Data</label>
+            <language>en</language>
+            <name>x_casus_callref_call_referrals</name>
+            <sequence/>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2016-09-26 19:31:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>8026c12e2b8e6e009ecc78cef6da1532</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2016-09-26 19:31:30</sys_updated_on>
+            <value>incorrect_record_data</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>tlc</dependent_value>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Mediasite Support</label>
+            <language>en</language>
+            <name>x_casus_callref_call_referrals</name>
+            <sequence/>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2016-09-21 23:04:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>266780450f4aee0012e4348ce1050e83</sys_id>
+            <sys_mod_count>6</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2016-09-28 19:28:17</sys_updated_on>
+            <value>mediasite</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>hr</dependent_value>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Name Change</label>
+            <language>en</language>
+            <name>x_casus_callref_call_referrals</name>
+            <sequence/>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2016-09-26 20:27:30</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>96831da62bce6e009ecc78cef6da15c0</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2016-09-26 20:27:38</sys_updated_on>
+            <value>name_change_hr</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>hr</dependent_value>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>No Job Record in CMS</label>
+            <language>en</language>
+            <name>x_casus_callref_call_referrals</name>
+            <sequence/>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2016-09-26 20:28:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>a4c351e62bce6e009ecc78cef6da153e</sys_id>
+            <sys_mod_count>6</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2016-09-26 20:30:54</sys_updated_on>
+            <value>no_job_record</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>cce</dependent_value>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Open University</label>
+            <language>en</language>
+            <name>x_casus_callref_call_referrals</name>
+            <sequence/>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2016-09-26 19:46:08</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>a3898d2e2b8e6e009ecc78cef6da1507</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2016-09-28 19:31:45</sys_updated_on>
+            <value>open_university</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>hr</dependent_value>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>POI Account</label>
+            <language>en</language>
+            <name>x_casus_callref_call_referrals</name>
+            <sequence/>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2016-09-26 20:27:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>13a399a62bce6e009ecc78cef6da15a1</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2016-09-26 20:28:07</sys_updated_on>
+            <value>poi_account</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>stc</dependent_value>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Poster Printing</label>
+            <language>en</language>
+            <name>x_casus_callref_call_referrals</name>
+            <sequence/>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2016-09-26 19:47:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>018ac5ee2b8e6e009ecc78cef6da15da</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2016-09-26 19:47:56</sys_updated_on>
+            <value>poster_printing</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>tlc</dependent_value>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Software Assistance</label>
+            <language>en</language>
+            <name>x_casus_callref_call_referrals</name>
+            <sequence/>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2016-09-26 19:49:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>459a41ee2b8e6e009ecc78cef6da1571</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2016-09-26 19:52:39</sys_updated_on>
+            <value>software_assistance_stc</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>stc</dependent_value>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Software Assistance</label>
+            <language>en</language>
+            <name>x_casus_callref_call_referrals</name>
+            <sequence/>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2016-09-26 19:47:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>913ac5ee2b8e6e009ecc78cef6da15d7</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2016-09-26 19:52:20</sys_updated_on>
+            <value>software_assistance_tlc</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>bursars_office</dependent_value>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Tax Forms</label>
+            <language>en</language>
+            <name>x_casus_callref_call_referrals</name>
+            <sequence/>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2016-09-26 19:40:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>be88cdae2b8e6e009ecc78cef6da1590</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2016-09-26 19:41:37</sys_updated_on>
+            <value>tax_forms</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>admissions_and_outreach</dependent_value>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>To-Do List</label>
+            <language>en</language>
+            <name>x_casus_callref_call_referrals</name>
+            <sequence/>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2016-09-26 19:28:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>d8f5452e2b8e6e009ecc78cef6da15c7</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2016-09-26 19:40:28</sys_updated_on>
+            <value>todo_list</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>university_registrar</dependent_value>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Transcripts</label>
+            <language>en</language>
+            <name>x_casus_callref_call_referrals</name>
+            <sequence/>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2016-09-09 22:50:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>0261d2c10f75aa0012e4348ce1050e27</sys_id>
+            <sys_mod_count>6</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2016-09-26 19:46:16</sys_updated_on>
+            <value>transcripts</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>hr</dependent_value>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Update DOB</label>
+            <language>en</language>
+            <name>x_casus_callref_call_referrals</name>
+            <sequence/>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2016-09-26 20:31:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>b7d391e62bce6e009ecc78cef6da1522</sys_id>
+            <sys_mod_count>6</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2016-09-26 20:33:14</sys_updated_on>
+            <value>update_dob_hr</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>tlc</dependent_value>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Video Conversion</label>
+            <language>en</language>
+            <name>x_casus_callref_call_referrals</name>
+            <sequence/>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2016-09-28 19:35:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>a2cadfc70f86a24012e4348ce1050e4c</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2016-09-28 19:35:55</sys_updated_on>
+            <value>video_conversion</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>cce</dependent_value>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Water Programs</label>
+            <language>en</language>
+            <name>x_casus_callref_call_referrals</name>
+            <sequence/>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2016-09-09 22:52:12</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>33a152c10f75aa0012e4348ce1050ecf</sys_id>
+            <sys_mod_count>6</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2016-09-28 19:32:57</sys_updated_on>
+            <value>water_programs</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>stc</dependent_value>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Workshop Information</label>
+            <language>en</language>
+            <name>x_casus_callref_call_referrals</name>
+            <sequence/>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2016-09-28 19:36:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>600b530b0f86a24012e4348ce1050e81</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2016-09-30 22:27:10</sys_updated_on>
+            <value>workshop_info</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>admissions_and_outreach</dependent_value>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Admissions Inquiry</label>
+            <language>en</language>
+            <name>x_casus_callref_call_referrals</name>
+            <sequence>100</sequence>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2016-09-01 22:50:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>4bb4096a0fa1e60012e4348ce1050e23</sys_id>
+            <sys_mod_count>12</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2016-09-26 20:44:40</sys_updated_on>
+            <value>general_admissions</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>atcs</dependent_value>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>ATCS Inquiry</label>
+            <language>en</language>
+            <name>x_casus_callref_call_referrals</name>
+            <sequence>100</sequence>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2016-09-15 23:46:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>c947d18b0ffd2e0012e4348ce1050e20</sys_id>
+            <sys_mod_count>9</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2016-09-26 20:43:42</sys_updated_on>
+            <value>general_atcs</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>bursars_office</dependent_value>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Financial Aid Inquiry</label>
+            <language>en</language>
+            <name>x_casus_callref_call_referrals</name>
+            <sequence>100</sequence>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2016-09-09 22:51:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>78715a810f75aa0012e4348ce1050ecf</sys_id>
+            <sys_mod_count>10</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2016-09-26 20:44:45</sys_updated_on>
+            <value>general_bursars</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>cce</dependent_value>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>CCE Inquiry</label>
+            <language>en</language>
+            <name>x_casus_callref_call_referrals</name>
+            <sequence>100</sequence>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2016-09-15 18:28:51</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>40ee00870f7d2e0012e4348ce1050e8e</sys_id>
+            <sys_mod_count>8</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2016-09-26 20:43:49</sys_updated_on>
+            <value>general_cce</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>hr</dependent_value>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Human Resources Inquiry</label>
+            <language>en</language>
+            <name>x_casus_callref_call_referrals</name>
+            <sequence>100</sequence>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2016-09-15 23:19:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>1d7119470ffd2e0012e4348ce1050ee2</sys_id>
+            <sys_mod_count>6</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2016-09-26 20:44:29</sys_updated_on>
+            <value>general_hr</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>learning_space_services</dependent_value>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Learning Space Services Inquiry</label>
+            <language>en</language>
+            <name>x_casus_callref_call_referrals</name>
+            <sequence>100</sequence>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2016-09-28 19:34:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>c76adbc70f86a24012e4348ce1050e17</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2016-09-28 19:35:09</sys_updated_on>
+            <value>general_learning_space_services</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>university_library</dependent_value>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Library Inquiry</label>
+            <language>en</language>
+            <name>x_casus_callref_call_referrals</name>
+            <sequence>100</sequence>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2016-09-15 23:49:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>3478994b0ffd2e0012e4348ce1050e1a</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2016-09-26 20:44:48</sys_updated_on>
+            <value>general_library</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>university_registrar</dependent_value>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Registration Inquiry</label>
+            <language>en</language>
+            <name>x_casus_callref_call_referrals</name>
+            <sequence>100</sequence>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2016-09-09 22:51:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>0da112c10f75aa0012e4348ce1050ead</sys_id>
+            <sys_mod_count>7</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2016-09-26 20:44:54</sys_updated_on>
+            <value>general_registration</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>atcs</dependent_value>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>SacCT Inquiry</label>
+            <language>en</language>
+            <name>x_casus_callref_call_referrals</name>
+            <sequence>100</sequence>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2016-09-15 23:44:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>73c4994b0ffd2e0012e4348ce1050eb9</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2016-09-26 20:45:13</sys_updated_on>
+            <value>general_sacct</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>stc</dependent_value>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>STC Inquiry</label>
+            <language>en</language>
+            <name>x_casus_callref_call_referrals</name>
+            <sequence>100</sequence>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2016-09-15 23:49:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>42c71d8b0ffd2e0012e4348ce1050e4d</sys_id>
+            <sys_mod_count>7</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2016-09-28 19:33:53</sys_updated_on>
+            <value>general_stc</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>tlc</dependent_value>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>TLC Inquiry</label>
+            <language>en</language>
+            <name>x_casus_callref_call_referrals</name>
+            <sequence>100</sequence>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2016-09-15 23:49:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>d458158b0ffd2e0012e4348ce1050e3e</sys_id>
+            <sys_mod_count>6</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2016-09-28 19:33:57</sys_updated_on>
+            <value>general_tlc</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>other</dependent_value>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>--Other--</label>
+            <language>en</language>
+            <name>x_casus_callref_call_referrals</name>
+            <sequence>100</sequence>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2016-09-16 00:25:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>c4b0298f2b796a009ecc78cef6da15c4</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2016-09-21 23:18:08</sys_updated_on>
+            <value>other</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>reason</element>
+            <name>x_casus_callref_call_referrals</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2016-09-01 22:50:50</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>0fb4096a0fa1e60012e4348ce1050e23</sys_id>
+            <sys_mod_count>222</sys_mod_count>
+            <sys_name>reason</sys_name>
+            <sys_package display_value="Service Desk Call Referrals" source="x_casus_callref">158840a62b69e2009ecc78cef6da155d</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>true</sys_replace_on_upgrade>
+            <sys_scope display_value="Service Desk Call Referrals">158840a62b69e2009ecc78cef6da155d</sys_scope>
+            <sys_update_name>sys_choice_x_casus_callref_call_referrals_reason</sys_update_name>
+            <sys_updated_by>nicholasmyers</sys_updated_by>
+            <sys_updated_on>2016-10-05 22:27:05</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

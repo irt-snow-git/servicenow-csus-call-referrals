@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="test" table="x_casus_callref_call_referrals" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>test</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>test</label>
+            <language>en</language>
+            <name>x_casus_callref_call_referrals</name>
+            <sequence/>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2016-09-08 18:33:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>74fc04382bf5a6009ecc78cef6da157d</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2016-09-08 18:33:40</sys_updated_on>
+            <value>test</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>test</element>
+            <name>x_casus_callref_call_referrals</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2016-09-08 18:33:26</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>38fc04382bf5a6009ecc78cef6da157d</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_name>test</sys_name>
+            <sys_package display_value="Service Desk Call Referrals" source="x_casus_callref">158840a62b69e2009ecc78cef6da155d</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>true</sys_replace_on_upgrade>
+            <sys_scope display_value="Service Desk Call Referrals">158840a62b69e2009ecc78cef6da155d</sys_scope>
+            <sys_update_name>sys_choice_x_casus_callref_call_referrals_test</sys_update_name>
+            <sys_updated_by>nicholasmyers</sys_updated_by>
+            <sys_updated_on>2016-10-05 22:27:04</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

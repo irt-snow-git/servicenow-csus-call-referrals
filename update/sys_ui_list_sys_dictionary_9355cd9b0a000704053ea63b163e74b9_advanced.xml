@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_list parent="sys_dictionary" relationship="9355cd9b0a000704053ea63b163e74b9" sys_domain="global" table="sys_choice" version="2" view="advanced">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>label</element>
+            <list_id display_value="sys_choice" element="NULL" name="sys_choice" parent="sys_dictionary" relationship="9355cd9b0a000704053ea63b163e74b9" sys_domain="global" view="7266ccde0a0a3c74008ac4886aebcfc6">b2e4aef09f412100d8f8700c267fcf51</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2014-05-30 14:05:42</sys_created_on>
+            <sys_id>76e4aef09f412100d8f8700c267fcf51</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2014-05-30 14:05:42</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>value</element>
+            <list_id display_value="sys_choice" element="NULL" name="sys_choice" parent="sys_dictionary" relationship="9355cd9b0a000704053ea63b163e74b9" sys_domain="global" view="7266ccde0a0a3c74008ac4886aebcfc6">b2e4aef09f412100d8f8700c267fcf51</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2014-05-30 14:05:42</sys_created_on>
+            <sys_id>b6e4aef09f412100d8f8700c267fcf51</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2014-05-30 14:05:42</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>language</element>
+            <list_id display_value="sys_choice" element="NULL" name="sys_choice" parent="sys_dictionary" relationship="9355cd9b0a000704053ea63b163e74b9" sys_domain="global" view="7266ccde0a0a3c74008ac4886aebcfc6">b2e4aef09f412100d8f8700c267fcf51</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2014-05-30 14:05:42</sys_created_on>
+            <sys_id>f6e4aef09f412100d8f8700c267fcf51</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2014-05-30 14:05:42</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sequence</element>
+            <list_id display_value="sys_choice" element="NULL" name="sys_choice" parent="sys_dictionary" relationship="9355cd9b0a000704053ea63b163e74b9" sys_domain="global" view="7266ccde0a0a3c74008ac4886aebcfc6">b2e4aef09f412100d8f8700c267fcf51</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2014-05-30 14:05:42</sys_created_on>
+            <sys_id>3ae4aef09f412100d8f8700c267fcf51</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2014-05-30 14:05:42</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>inactive</element>
+            <list_id display_value="sys_choice" element="NULL" name="sys_choice" parent="sys_dictionary" relationship="9355cd9b0a000704053ea63b163e74b9" sys_domain="global" view="7266ccde0a0a3c74008ac4886aebcfc6">b2e4aef09f412100d8f8700c267fcf51</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2014-05-30 14:05:42</sys_created_on>
+            <sys_id>7ae4aef09f412100d8f8700c267fcf51</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2014-05-30 14:05:42</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_updated_on</element>
+            <list_id display_value="sys_choice" element="NULL" name="sys_choice" parent="sys_dictionary" relationship="9355cd9b0a000704053ea63b163e74b9" sys_domain="global" view="7266ccde0a0a3c74008ac4886aebcfc6">b2e4aef09f412100d8f8700c267fcf51</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2014-05-30 14:05:42</sys_created_on>
+            <sys_id>bae4aef09f412100d8f8700c267fcf51</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2014-05-30 14:05:42</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>dependent_value</element>
+            <list_id display_value="sys_choice" element="NULL" name="sys_choice" parent="sys_dictionary" relationship="9355cd9b0a000704053ea63b163e74b9" sys_domain="global" view="7266ccde0a0a3c74008ac4886aebcfc6">b2e4aef09f412100d8f8700c267fcf51</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2014-05-30 14:05:42</sys_created_on>
+            <sys_id>fae4aef09f412100d8f8700c267fcf51</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2014-05-30 14:05:42</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>sys_choice</name>
+            <parent>sys_dictionary</parent>
+            <position/>
+            <relationship display_value="Choices">9355cd9b0a000704053ea63b163e74b9</relationship>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2016-09-13 16:57:42</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_id>57f6251a2b392a009ecc78cef6da158b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sys_choice</sys_name>
+            <sys_package display_value="Service Desk Call Referrals" source="x_casus_callref">158840a62b69e2009ecc78cef6da155d</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Service Desk Call Referrals">158840a62b69e2009ecc78cef6da155d</sys_scope>
+            <sys_update_name>sys_ui_list_sys_dictionary_9355cd9b0a000704053ea63b163e74b9_advanced</sys_update_name>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2016-09-13 16:57:42</sys_updated_on>
+            <sys_user display_value="Gregory Guzman">8142eaf50a0a3c9e01c438429dc13efa</sys_user>
+            <view display_value="Advanced" name="advanced">7266ccde0a0a3c74008ac4886aebcfc6</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

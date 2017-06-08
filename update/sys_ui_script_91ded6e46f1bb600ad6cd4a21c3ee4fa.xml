@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_script">
+    <sys_ui_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>Controller for call referral UI page</description>
+        <global>false</global>
+        <name>x_casus_callref.angular_controller</name>
+        <script><![CDATA[var myApp = angular.module('myApp', []);
+var callReferences = []; // (Global)
+
+// - - - Begin Controller - - - //
+myApp.controller('CallReferralsController', ['$scope', function ($scope, suppliesFactory) {
+    
+	$scope.async = 0;
+	$scope.suppliesAll = [];
+	$scope.depts = [{
+		"name": "Human Resources",
+		"value": "hr"
+	},{
+		"name": "Human Resources",
+		"value": "hr"
+	}];
+	//Set default to current date
+	$scope.data.supply[0].received_date = $scope.currentDate;
+	$scope.suppliesAll = supplyReferences;
+	$scope.async = 1;
+	// - - - -End Init - - - -//
+
+	//This deletes the panel and it's information.
+	$scope.close = function(index) {
+		//Removes the data from array, thus removing the html elements
+		$scope.data.supply.splice(index,1);
+	};
+	
+	//Calls script include to submit records manually
+	$scope.submitAll = function () {
+		//Loop through each data, call server to submit
+			
+			//Call to server to actually submit
+			var ajax = new GlideAjax('x_casus_printsmart.submitMultiple');
+			ajax.addParam('sysparm_name','submitSupplyReceived');
+			ajax.addParam('sysparm_supply_type', supID);
+			ajax.addParam('sysparm_quantity_received', supQuantity);
+			ajax.addParam('sysparm_received_date', supDate);
+			ajax.getXML(function ()  {
+			});
+		//Redirect user
+		var url = location.hostname;
+		window.location = url + '/x_casus_printsmart_supplies_received_list.do';
+	};
+
+	
+}])// - - -END Controller- - - //
+
+
+
+/* This is used to autofocus the first field after dynamically adding a new obj
+Place custom-autofocus html attribute into the desired field like so custom-autofocus="$index == focusIndex"
+Must be used in ng-repeat
+*/
+.directive('customAutofocus', function() {
+  return{
+         restrict: 'A',
+
+         link: function(scope, element, attrs){
+           scope.$watch(function(){
+             return scope.$eval(attrs.customAutofocus);
+             },function (newValue){
+               if (newValue == true){
+                   element[0].focus();
+               }
+           });
+         }
+     };
+})//End Directive//
+
+/* Provides autopopulated dropdown menu. 
+*/
+.directive('customDropdown', function() {
+	return {
+		restrict: 'C',
+		template : 
+			'<datalist id="supplyList">' +
+			'<div ng-repeat="sup in suppliesAll track by $index">' +
+				'<option value="{{sup.supply_type}}">' + 
+			'</div>' +
+			'</datalist>'
+	};
+})//- - End Directive - - //
+
+/* Provides autopopulated dropdown menu. 
+*/
+.directive('locationDropdown', function() {
+	return {
+		restrict: 'C',
+		template : 
+			'<datalist id="locationList">' +
+			'<div ng-repeat="sup in locationsAll track by $index">' +
+				'<option value="{{sup.location}}">' + 
+			'</div>' +
+			'</datalist>'
+	};
+})//- - End Directive - - //
+
+;//- - - - -End App- - - - -//
+
+
+// - - - Handlers and Other Functions - - - //
+
+//Handles the XML call that retrieves supply sys_ids and supply_types
+//Assigns them to dat global supplyReferences 
+function handleSupplyReferences(response) {
+	var supplies = response.responseXML.getElementsByTagName("supply");
+	for (var i = 0; i < supplies.length; i++ ) {
+		//Temp object to push
+		var supRef = {
+			"sys_id":"",
+			"supply_type":""
+		};
+		//Fill temp obj with values from XML
+		supRef.sys_id = supplies[i].getAttribute("sys_id");
+		supRef.supply_type = supplies[i].getAttribute("supply_type");
+		supplyReferences.push(supRef);
+	}//End For
+	
+}
+
+//Handles the XML call that retrieves supply sys_ids and supply_types
+//Assigns them to dat global supplyReferences 
+function handleLocationReferences(response) {
+	var locs = response.responseXML.getElementsByTagName("location");
+	for (var i = 0; i < locs.length; i++ ) {
+		//Temp object to push
+		var ref = {
+			"sys_id":"",
+			"location":""
+		};
+		//Fill temp obj with values from XML
+		ref.sys_id = locs[i].getAttribute("sys_id");
+		ref.location = locs[i].getAttribute("location");
+		supplyReferences.push(ref);
+	}//End For
+	
+}
+
+// - - - - End Handlers - - - - //
+
+/*
+Uses a global variable to store all the supplies
+*/
+function getSupplyReferences() {
+	var ajax = new GlideAjax('x_casus_printsmart.submitMultiple');
+	ajax.addParam('sysparm_name','getSupplyTableReferences');
+	ajax.getXML(handleSupplyReferences);
+	ajax.getXMLWait();
+	//Now the supply references should have data (sys_id and supply_type)
+	return supplyReferences;
+}
+
+/*
+Uses a global variable to store all the locations
+*/
+function getLocationReferences() {
+	var ajax = new GlideAjax('x_casus_printsmart.submitMultiple');
+	ajax.addParam('sysparm_name','getLocationReferences');
+	ajax.getXML(handleLocationReferences);
+	ajax.getXMLWait();
+	//Now the supply references should have data (sys_id and supply_type)
+	return supplyReferences;
+}
+]]></script>
+        <script_name>angular_controller</script_name>
+        <sys_class_name>sys_ui_script</sys_class_name>
+        <sys_created_by>gg622</sys_created_by>
+        <sys_created_on>2017-06-08 20:24:34</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>91ded6e46f1bb600ad6cd4a21c3ee4fa</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_casus_callref.angular_controller</sys_name>
+        <sys_package display_value="Service Desk Call Referrals" source="x_casus_callref">158840a62b69e2009ecc78cef6da155d</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Service Desk Call Referrals">158840a62b69e2009ecc78cef6da155d</sys_scope>
+        <sys_update_name>sys_ui_script_91ded6e46f1bb600ad6cd4a21c3ee4fa</sys_update_name>
+        <sys_updated_by>gg622</sys_updated_by>
+        <sys_updated_on>2017-06-08 20:58:40</sys_updated_on>
+        <use_scoped_format>false</use_scoped_format>
+    </sys_ui_script>
+</record_update>
