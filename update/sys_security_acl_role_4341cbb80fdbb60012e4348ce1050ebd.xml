@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>gg622</sys_created_by>
+        <sys_created_on>2017-06-09 17:26:44</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>4341cbb80fdbb60012e4348ce1050ebd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_casus_callref_department.x_casus_callref.user</sys_name>
+        <sys_package display_value="Service Desk Call Referrals" source="x_casus_callref">158840a62b69e2009ecc78cef6da155d</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Service Desk Call Referrals">158840a62b69e2009ecc78cef6da155d</sys_scope>
+        <sys_security_acl display_value="x_casus_callref_department">8741c3380fdbb60012e4348ce1050e43</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_4341cbb80fdbb60012e4348ce1050ebd</sys_update_name>
+        <sys_updated_by>gg622</sys_updated_by>
+        <sys_updated_on>2017-06-09 17:26:44</sys_updated_on>
+        <sys_user_role display_value="x_casus_callref.user" name="x_casus_callref.user">1188882a2b69e2009ecc78cef6da1516</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>
