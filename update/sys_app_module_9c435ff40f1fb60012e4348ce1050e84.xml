@@ -2,7 +2,7 @@
 <record_update sys_domain="global" table="sys_app_module">
     <sys_app_module action="INSERT_OR_UPDATE">
         <active>true</active>
-        <application display_value="Service Desk Call Referrals">5588882a2b69e2009ecc78cef6da1515</application>
+        <application display_value="System Import Sets">import_sets</application>
         <assessment/>
         <content_page/>
         <device_type/>
@@ -12,34 +12,34 @@
         <image/>
         <link_type>LIST</link_type>
         <map_page/>
-        <mobile_title>departments</mobile_title>
+        <mobile_title>Imp Tmpl X Casus Callref Department</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
-        <name>x_casus_callref_department</name>
-        <order/>
+        <name>u_imp_tmpl_x_casus_callref_department</name>
+        <order>1100</order>
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
-        <roles>x_casus_callref.user</roles>
+        <roles/>
         <survey/>
         <survey_overwrite>true</survey_overwrite>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>gg622</sys_created_by>
-        <sys_created_on>2017-06-09 17:26:43</sys_created_on>
+        <sys_created_on>2017-06-09 18:45:11</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_domain>global</sys_domain>
-        <sys_id>7e41c3380fdbb60012e4348ce1050e3f</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name>Departments</sys_name>
+        <sys_id>9c435ff40f1fb60012e4348ce1050e84</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Imp Tmpl X Casus Callref Department</sys_name>
         <sys_overrides/>
         <sys_package display_value="Service Desk Call Referrals" source="x_casus_callref">158840a62b69e2009ecc78cef6da155d</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Service Desk Call Referrals">158840a62b69e2009ecc78cef6da155d</sys_scope>
-        <sys_update_name>sys_app_module_7e41c3380fdbb60012e4348ce1050e3f</sys_update_name>
+        <sys_update_name>sys_app_module_9c435ff40f1fb60012e4348ce1050e84</sys_update_name>
         <sys_updated_by>gg622</sys_updated_by>
-        <sys_updated_on>2017-06-09 18:07:25</sys_updated_on>
+        <sys_updated_on>2017-06-09 18:45:11</sys_updated_on>
         <timeline_page/>
-        <title>Departments</title>
+        <title>Imp Tmpl X Casus Callref Department</title>
         <u_basic_module/>
         <u_count_color/>
         <u_count_filter/>

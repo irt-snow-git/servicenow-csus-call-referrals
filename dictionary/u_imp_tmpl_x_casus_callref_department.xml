@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="Imp Tmpl X Casus Callref Department" max_length="40" name="u_imp_tmpl_x_casus_callref_department" type="collection">
+        <element attributes="import_attribute_name=Name,edge_encryption_enabled=true" label="Name" max_length="40" name="u_name" type="string"/>
+        <element attributes="import_attribute_name=Pinned,edge_encryption_enabled=true" label="Pinned" max_length="40" name="u_pinned" type="string"/>
+    </element>
+</database>
