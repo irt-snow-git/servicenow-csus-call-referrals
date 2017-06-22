@@ -13,7 +13,8 @@ myApp.controller('CallReferralsController', ['$scope', function ($scope) {
     
 	$scope.async = 0;
 	$scope.suppliesAll = [];
-	$scope.buttonCSS = "btn-default btn btn-lg btn-block";
+	$scope.buttonCSS = "btn-grey btn btn-lg col-sm-11";
+	$scope.pinCSS = "btn btn-pin col-sm-1";
 	$scope.depts = [{//hard coded for now smh
 		"name": "Human Resources",
 		"value": "hr"
@@ -35,6 +36,9 @@ myApp.controller('CallReferralsController', ['$scope', function ($scope) {
 	// - - - -End Init - - - -//
 	$scope.setActiveButton = function(dept, button) {
 		
+	};
+	$scope.pin = function (dept) {			
+			
 	};
 	//Calls script include to submit records manually
 	$scope.submit = function (dept) {			
@@ -108,7 +112,7 @@ function getSupplyReferences() {
         <sys_created_on>2017-06-08 20:24:34</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>91ded6e46f1bb600ad6cd4a21c3ee4fa</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_name>x_casus_callref.angular_controller</sys_name>
         <sys_package display_value="Service Desk Call Referrals" source="x_casus_callref">158840a62b69e2009ecc78cef6da155d</sys_package>
         <sys_policy/>
@@ -116,7 +120,7 @@ function getSupplyReferences() {
         <sys_scope display_value="Service Desk Call Referrals">158840a62b69e2009ecc78cef6da155d</sys_scope>
         <sys_update_name>sys_ui_script_91ded6e46f1bb600ad6cd4a21c3ee4fa</sys_update_name>
         <sys_updated_by>gg622</sys_updated_by>
-        <sys_updated_on>2017-06-08 22:32:11</sys_updated_on>
+        <sys_updated_on>2017-06-22 18:11:04</sys_updated_on>
         <use_scoped_format>false</use_scoped_format>
     </sys_ui_script>
 </record_update>
