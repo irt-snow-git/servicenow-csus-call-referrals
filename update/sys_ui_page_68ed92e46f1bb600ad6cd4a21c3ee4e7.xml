@@ -33,7 +33,8 @@ function setActive(active_div, button) {
 <style>
 	
 .btn-pin {
-	background-color: #dcedc8;
+	background-color: transparent;
+	display: none;
 }
 .btn-pin.pinned {
 	box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
@@ -47,6 +48,9 @@ function setActive(active_div, button) {
 .btn-grey:hover {
 	background-color: #f1f8e9  !important; 
 }
+.chunk:hover .btn-pin {
+	display: inline-block;
+}
 .panel-shadow {
     -webkit-box-shadow: 0 8px 17px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
     box-shadow: 0 8px 17px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
@@ -57,7 +61,6 @@ function setActive(active_div, button) {
     margin-top: 100px;
 }
 
-	
 [type="radio"]:not(:checked)+label, [type="radio"]:checked+label {
     position: relative;
     padding-left: 35px;
@@ -187,17 +190,27 @@ function setActive(active_div, button) {
 					<input class="form-control" ng-model="searchText"/>
 					<form name="sortForm">
 						<h3> Sort By </h3>
-						<input id="pop" type="radio" ng-model="customOrder" value="popularity"/>
-						<label for="pop">Popularity</label>
+						<p>
+							<input id="radio_sort_pop" type="radio" ng-model="customOrder" value="popularity"/>
+							<label for="radio_sort_pop">Popularity</label>
+						</p>
+						<p>
+							<input id="radio_sort_name" type="radio" ng-model="customOrder" value="name"/>
+							<label for="radio_sort_name">Name</label>
+						</p>
 					</form>
 				</div>
 			</div>
 			<div class="center-block col-sm-9" style="max-width:500px">
 				<div ng-repeat="dept in depts | orderBy: 'name' | filter:searchText track by $index" style="padding:30px">
-					<button ng-class="pinCSS" ng-click="pin(dept)" >&#x1F4CC;</button>
-					<button id="{{dept.name}}_btn" type="button" ng-class="buttonCSS" style="padding: 10px" ng-click="submit(dept.value)">
-						{{dept.name}}
-					</button>
+					<div class="chunk">
+						<button id="{{dept.name}}_btn" type="button" ng-class="buttonCSS" 
+								style="padding: 10px" ng-click="submit(dept.value)">
+							{{dept.name}}
+						</button>
+						<button ng-class="pinCSS" ng-click="pin(dept)" >&#x1F4CC;</button>
+
+					</div>
 				</div>
 			</div>
 		
@@ -214,7 +227,7 @@ function setActive(active_div, button) {
         <sys_created_on>2017-06-08 20:29:22</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>68ed92e46f1bb600ad6cd4a21c3ee4e7</sys_id>
-        <sys_mod_count>66</sys_mod_count>
+        <sys_mod_count>79</sys_mod_count>
         <sys_name>Submit Call Referral</sys_name>
         <sys_package display_value="Service Desk Call Referrals" source="x_casus_callref">158840a62b69e2009ecc78cef6da155d</sys_package>
         <sys_policy/>
@@ -222,6 +235,6 @@ function setActive(active_div, button) {
         <sys_scope display_value="Service Desk Call Referrals">158840a62b69e2009ecc78cef6da155d</sys_scope>
         <sys_update_name>sys_ui_page_68ed92e46f1bb600ad6cd4a21c3ee4e7</sys_update_name>
         <sys_updated_by>gg622</sys_updated_by>
-        <sys_updated_on>2017-06-22 21:12:50</sys_updated_on>
+        <sys_updated_on>2017-06-22 21:51:34</sys_updated_on>
     </sys_ui_page>
 </record_update>
