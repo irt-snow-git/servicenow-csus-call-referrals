@@ -6,34 +6,22 @@
         <global>false</global>
         <name>x_casus_callref.angular_controller</name>
         <script><![CDATA[var myApp = angular.module('myApp', []);
-var callReferences = []; // (Global) not currently used
-
+var departmentReferences = [];
+departmentReferences = getDepartmentReferences(); 
+console.log(departmentReferences);
 // - - - Begin Controller - - - //
 myApp.controller('CallReferralsController', ['$scope', function ($scope) {
     
 	$scope.async = 0;
-	$scope.suppliesAll = [];
+	$scope.departmentsAll = [];
 	$scope.buttonCSS = "btn-grey btn btn-lg col-sm-11";
 	$scope.pinCSS = "btn btn-pin col-sm-1";
-	$scope.depts = [{//hard coded for now smh
-		"name": "Human Resources",
-		"value": "hr"
-	},{
-		"name": "Registrar",
-		"value": "university_registrar"
-	},{
-		"name": "Library",
-		"value": "university_library"
-	},{
-		"name": "Bursar's Office",
-		"value": "bursars_office"
-	},{
-		"name": "Admissions and Outreach",
-		"value": "admissions_and_outreach"
-	}];
-	//$scope.suppliesAll = supplyReferences;
+	$scope.depts = [];
+	$scope.depts = departmentReferences;
 	$scope.async = 1;
 	// - - - -End Init - - - -//
+	
+	
 	$scope.setActiveButton = function(dept, button) {
 		
 	};
@@ -59,36 +47,20 @@ myApp.controller('CallReferralsController', ['$scope', function ($scope) {
 
 //Handles the XML call that retrieves supply sys_ids and supply_types
 //Assigns them to dat global supplyReferences 
-function handleSupplyReferences(response) {
-	var supplies = response.responseXML.getElementsByTagName("supply");
-	for (var i = 0; i < supplies.length; i++ ) {
-		//Temp object to push
-		var supRef = {
-			"sys_id":"",
-			"supply_type":""
-		};
-		//Fill temp obj with values from XML
-		supRef.sys_id = supplies[i].getAttribute("sys_id");
-		supRef.supply_type = supplies[i].getAttribute("supply_type");
-		supplyReferences.push(supRef);
-	}//End For
-	
-}
-
-//Handles the XML call that retrieves supply sys_ids and supply_types
-//Assigns them to dat global supplyReferences 
-function handleLocationReferences(response) {
-	var locs = response.responseXML.getElementsByTagName("location");
-	for (var i = 0; i < locs.length; i++ ) {
+function handleGetDepartments(response) {
+	var departments = response.responseXML.getElementsByTagName("department");
+	for (var i = 0; i < departments.length; i++ ) {
 		//Temp object to push
 		var ref = {
 			"sys_id":"",
-			"location":""
+			"popularity":"",
+			"name":""
 		};
 		//Fill temp obj with values from XML
-		ref.sys_id = locs[i].getAttribute("sys_id");
-		ref.location = locs[i].getAttribute("location");
-		supplyReferences.push(ref);
+		ref.sys_id = departments[i].getAttribute("sys_id");
+		ref.name = departments[i].getAttribute("name");
+		ref.popularity = departments[i].getAttribute("popularity");
+		departmentReferences.push(ref);
 	}//End For
 	
 }
@@ -98,13 +70,13 @@ function handleLocationReferences(response) {
 /*
 Uses a global variable to store all the supplies
 */
-function getSupplyReferences() {
-	var ajax = new GlideAjax('x_casus_printsmart.submitMultiple');
-	ajax.addParam('sysparm_name','getSupplyTableReferences');
-	ajax.getXML(handleSupplyReferences);
+function getDepartmentReferences() {
+	var ajax = new GlideAjax('x_casus_callref.retrieveSubmitRecords');
+	ajax.addParam('sysparm_name','getDepartments');
+	ajax.getXML(handleGetDepartments);
 	ajax.getXMLWait();
-	//Now the supply references should have data (sys_id and supply_type)
-	return supplyReferences;
+	//Now references should be set and angular can use them
+	return departmentReferences;
 }]]></script>
         <script_name>angular_controller</script_name>
         <sys_class_name>sys_ui_script</sys_class_name>
@@ -112,7 +84,7 @@ function getSupplyReferences() {
         <sys_created_on>2017-06-08 20:24:34</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>91ded6e46f1bb600ad6cd4a21c3ee4fa</sys_id>
-        <sys_mod_count>19</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_name>x_casus_callref.angular_controller</sys_name>
         <sys_package display_value="Service Desk Call Referrals" source="x_casus_callref">158840a62b69e2009ecc78cef6da155d</sys_package>
         <sys_policy/>
@@ -120,7 +92,7 @@ function getSupplyReferences() {
         <sys_scope display_value="Service Desk Call Referrals">158840a62b69e2009ecc78cef6da155d</sys_scope>
         <sys_update_name>sys_ui_script_91ded6e46f1bb600ad6cd4a21c3ee4fa</sys_update_name>
         <sys_updated_by>gg622</sys_updated_by>
-        <sys_updated_on>2017-06-22 18:11:04</sys_updated_on>
+        <sys_updated_on>2017-06-22 19:30:37</sys_updated_on>
         <use_scoped_format>false</use_scoped_format>
     </sys_ui_script>
 </record_update>
