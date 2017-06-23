@@ -37,8 +37,13 @@ body {
 }
 	
 .btn-pin {
-	background-color: transparent;
-	display: none;
+	background-color: #C3DBDB;
+	opacity: 0;
+	padding: 0px;
+	border-radius: 50%;
+	margin-left: 8px;
+	padding: 5px;
+	transition: opacity .75s;
 }
 .btn-pin.pinned {
 	box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
@@ -56,7 +61,7 @@ body {
 	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
 }
 .chunk:hover .btn-pin {
-	display: inline-block;
+	opacity: 1;
 }
 .panel-shadow {
     -webkit-box-shadow: 0 8px 17px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
@@ -66,6 +71,12 @@ body {
 .panel-slide {
 	padding: 30px;
     margin-top: 100px;
+}
+	
+.glyphicon{
+	font-size: 25px;
+	right: 1px;
+	top: 3px;
 }
 
 [type="radio"]:not(:checked)+label, [type="radio"]:checked+label {
@@ -211,12 +222,15 @@ body {
 			<div class="panel panel-shadow col-sm-7 col-sm-offset-1">
 				<div class="center-block col-sm-12">
 					<div ng-repeat="dept in depts | orderBy: customOrder | filter:searchText track by $index" style="padding:30px">
-						<div class="chunk">
+						<div class="chunk col-sm-12">
 							<button id="{{dept.name}}_btn" type="button" ng-class="buttonCSS" 
 									style="padding: 10px" ng-click="submit(dept.value)">
 								{{dept.name}}
 							</button>
-							<button ng-class="pinCSS" ng-click="pin(dept)" >&#x1F4CC;</button>
+							<button ng-class="pinCSS" ng-click="pin(dept)" >
+								<span class="glyphicon glyphicon-heart-empty" aria-hidden="true">
+								</span>
+							</button>
 						</div>
 					</div>
 				</div>
@@ -235,7 +249,7 @@ body {
         <sys_created_on>2017-06-08 20:29:22</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>68ed92e46f1bb600ad6cd4a21c3ee4e7</sys_id>
-        <sys_mod_count>96</sys_mod_count>
+        <sys_mod_count>109</sys_mod_count>
         <sys_name>Submit Call Referral</sys_name>
         <sys_package display_value="Service Desk Call Referrals" source="x_casus_callref">158840a62b69e2009ecc78cef6da155d</sys_package>
         <sys_policy/>
@@ -243,6 +257,6 @@ body {
         <sys_scope display_value="Service Desk Call Referrals">158840a62b69e2009ecc78cef6da155d</sys_scope>
         <sys_update_name>sys_ui_page_68ed92e46f1bb600ad6cd4a21c3ee4e7</sys_update_name>
         <sys_updated_by>gg622</sys_updated_by>
-        <sys_updated_on>2017-06-22 22:50:43</sys_updated_on>
+        <sys_updated_on>2017-06-23 18:15:25</sys_updated_on>
     </sys_ui_page>
 </record_update>
