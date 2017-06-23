@@ -219,7 +219,7 @@ body {
 					</form>
 				</div>
 			</div>
-			<div class="panel panel-shadow col-sm-7 col-sm-offset-1">
+			<div class="panel panel-shadow col-sm-8 col-sm-offset-1">
 				<div class="center-block col-sm-12">
 					<div ng-repeat="dept in depts | orderBy: customOrder | filter:searchText track by $index" style="padding:30px">
 						<div class="chunk col-sm-12">
@@ -229,6 +229,10 @@ body {
 							</button>
 							<button ng-class="pinCSS" ng-click="pin(dept)" >
 								<span class="glyphicon glyphicon-heart-empty" aria-hidden="true">
+								</span>
+							</button>
+							<button ng-class="pinCSS" ng-click="pin(dept)" >
+								<span class="glyphicon glyphicon-earphone" aria-hidden="true">
 								</span>
 							</button>
 						</div>
@@ -249,7 +253,7 @@ body {
         <sys_created_on>2017-06-08 20:29:22</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>68ed92e46f1bb600ad6cd4a21c3ee4e7</sys_id>
-        <sys_mod_count>109</sys_mod_count>
+        <sys_mod_count>110</sys_mod_count>
         <sys_name>Submit Call Referral</sys_name>
         <sys_package display_value="Service Desk Call Referrals" source="x_casus_callref">158840a62b69e2009ecc78cef6da155d</sys_package>
         <sys_policy/>
@@ -257,6 +261,6 @@ body {
         <sys_scope display_value="Service Desk Call Referrals">158840a62b69e2009ecc78cef6da155d</sys_scope>
         <sys_update_name>sys_ui_page_68ed92e46f1bb600ad6cd4a21c3ee4e7</sys_update_name>
         <sys_updated_by>gg622</sys_updated_by>
-        <sys_updated_on>2017-06-23 18:15:25</sys_updated_on>
+        <sys_updated_on>2017-06-23 21:21:33</sys_updated_on>
     </sys_ui_page>
 </record_update>
