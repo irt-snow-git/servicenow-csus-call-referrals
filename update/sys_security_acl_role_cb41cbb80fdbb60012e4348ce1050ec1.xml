@@ -4,7 +4,7 @@
         <sys_class_name>sys_security_acl_role</sys_class_name>
         <sys_created_by>gg622</sys_created_by>
         <sys_created_on>2017-06-09 17:26:44</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>cb41cbb80fdbb60012e4348ce1050ec1</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_casus_callref_department.x_casus_callref.user</sys_name>

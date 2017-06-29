@@ -7,7 +7,7 @@
         <sys_class_name>sys_ui_policy_action</sys_class_name>
         <sys_created_by>gg622</sys_created_by>
         <sys_created_on>2016-09-27 17:32:59</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>773575b22b46ae009ecc78cef6da156c</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name>details</sys_name>
