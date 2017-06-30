@@ -25,8 +25,13 @@ myApp.controller('CallReferralsController', ['$scope', function ($scope) {
 	$scope.setActiveButton = function(dept, button) {
 		
 	};
-	$scope.pin = function (dept) {			
-			
+	$scope.pin = function (dept) {	
+		var ajax = new GlideAjax('x_casus_callref.retrieveSubmitRecords');
+			ajax.addParam('sysparm_name','pinDepartment');
+			ajax.addParam('sysparm_department', dept.sys_id);
+			ajax.getXML(function ()  {
+			});
+		
 	};
 	//Calls script include to submit records manually
 	$scope.submit = function (dept) {			
@@ -54,12 +59,17 @@ function handleGetDepartments(response) {
 		var ref = {
 			"sys_id":"",
 			"popularity":"",
+			"pinned": "",
 			"name":""
 		};
 		//Fill temp obj with values from XML
 		ref.sys_id = departments[i].getAttribute("sys_id");
 		ref.name = departments[i].getAttribute("name");
 		ref.popularity = departments[i].getAttribute("popularity");
+		ref.pinned = departments[i].getAttribute("pinned");
+		if (ref.pinned == true) {
+			console.log("Pinned ->" + ref.name);
+		}
 		departmentReferences.push(ref);
 	}//End For
 	
@@ -82,9 +92,9 @@ function getDepartmentReferences() {
         <sys_class_name>sys_ui_script</sys_class_name>
         <sys_created_by>gg622</sys_created_by>
         <sys_created_on>2017-06-08 20:24:34</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
+        <sys_customer_update>true</sys_customer_update>
         <sys_id>91ded6e46f1bb600ad6cd4a21c3ee4fa</sys_id>
-        <sys_mod_count>26</sys_mod_count>
+        <sys_mod_count>33</sys_mod_count>
         <sys_name>x_casus_callref.angular_controller</sys_name>
         <sys_package display_value="Service Desk Call Referrals" source="x_casus_callref">158840a62b69e2009ecc78cef6da155d</sys_package>
         <sys_policy/>
@@ -92,7 +102,7 @@ function getDepartmentReferences() {
         <sys_scope display_value="Service Desk Call Referrals">158840a62b69e2009ecc78cef6da155d</sys_scope>
         <sys_update_name>sys_ui_script_91ded6e46f1bb600ad6cd4a21c3ee4fa</sys_update_name>
         <sys_updated_by>gg622</sys_updated_by>
-        <sys_updated_on>2017-06-23 21:22:58</sys_updated_on>
+        <sys_updated_on>2017-06-30 18:15:27</sys_updated_on>
         <use_scoped_format>false</use_scoped_format>
     </sys_ui_script>
 </record_update>
