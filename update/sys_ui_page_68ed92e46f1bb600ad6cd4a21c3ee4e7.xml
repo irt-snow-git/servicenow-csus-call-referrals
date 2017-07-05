@@ -2,27 +2,7 @@
 <record_update table="sys_ui_page">
     <sys_ui_page action="INSERT_OR_UPDATE">
         <category>general</category>
-        <client_script><![CDATA[/*_________________________________________________________________
-   * Description: Hides all controller divs,
-   * Parameters: @active_div (string): name of div to activate
-			   @button - element of the button (button) to show active
-   ________________________________________________________________*/
-function setActive(active_div, button) {
-	//Hide all divs
-	//gel('supply_order_div').style.display = "none";
-	//gel('supply_receive_div').style.display = "none";
-	//gel('supply_delivery_div').style.display = "none";
-	
-	//Set clicked controller div to active
-	//gel(active_div).style.display = "block";
-	
-	//Remove class from all nav pills
-	//gel('supply_receive_li').className = "";
-	//gel('supply_order_li').className = "";
-	//gel('supply_delivery_li').className = "";
-	//Set clicked nav pill to active
-	button.className = "btn-primary";
-}]]></client_script>
+        <client_script/>
         <description>Allows quick submission of call referrals with fancy buttons. </description>
         <direct>false</direct>
         <endpoint>x_casus_callref_Submit Call Referral.do</endpoint>
@@ -217,7 +197,7 @@ body {
 	<div class="container full-height" id="main-div">
 		<div ng-controller="CallReferralsController">
 			<!-- Options Panel -->
-			<div class="container col-sm-3">
+			<div class="container col-sm-3" style="position: fixed;">
 				<div class="panel panel-shadow panel-slide">
 					<h3>Search  </h3>
 					<input class="form-control input-fat" ng-model="searchText"/>
@@ -238,7 +218,7 @@ body {
 			<!-- End Options Panel-->
 			
 			<!-- Departments List Panel -->
-			<div class="panel panel-shadow col-sm-8 col-sm-offset-1">
+			<div class="panel panel-shadow col-sm-8 col-sm-offset-1" style="left: 30%;">
 				<div class="center-block col-sm-12 ng-cloak" style="padding-bottom: 25px;">
 					<div ng-repeat="dept in depts | orderBy: ['-pinned', customOrder] | filter:searchText track by $index" style="padding:30px">
 						<div class="chunk col-sm-12">
@@ -279,7 +259,7 @@ body {
         <sys_created_on>2017-06-08 20:29:22</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>68ed92e46f1bb600ad6cd4a21c3ee4e7</sys_id>
-        <sys_mod_count>151</sys_mod_count>
+        <sys_mod_count>161</sys_mod_count>
         <sys_name>Submit Call Referral</sys_name>
         <sys_package display_value="Service Desk Call Referrals" source="x_casus_callref">158840a62b69e2009ecc78cef6da155d</sys_package>
         <sys_policy/>
@@ -287,6 +267,6 @@ body {
         <sys_scope display_value="Service Desk Call Referrals">158840a62b69e2009ecc78cef6da155d</sys_scope>
         <sys_update_name>sys_ui_page_68ed92e46f1bb600ad6cd4a21c3ee4e7</sys_update_name>
         <sys_updated_by>gg622</sys_updated_by>
-        <sys_updated_on>2017-07-05 21:35:16</sys_updated_on>
+        <sys_updated_on>2017-07-05 22:30:07</sys_updated_on>
     </sys_ui_page>
 </record_update>
