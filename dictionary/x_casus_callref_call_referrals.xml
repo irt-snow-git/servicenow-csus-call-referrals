@@ -1,25 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
     <element label="Call Referrals" max_length="40" name="x_casus_callref_call_referrals" type="collection">
-        <element choice="3" label="Department" mandatory="true" max_length="40" name="department" type="choice">
-            <choice>
-                <element label="Human Resources" sequence="0" value="hr"/>
-                <element label="Admissions &amp; Outreach" sequence="1" value="admissions_and_outreach"/>
-                <element label="Academic Advising Center" sequence="2" value="academic_advising_center"/>
-                <element label="Academic Technology &amp; Creative Services" sequence="3" value="atcs"/>
-                <element label="Bursar's Office" sequence="4" value="bursars_office"/>
-                <element label="College of Continuing Education" sequence="5" value="cce"/>
-                <element label="Learning Space Services" sequence="6" value="learning_space_services"/>
-                <element label="Student Technology Center" sequence="7" value="stc"/>
-                <element label="Teaching Learning Center" sequence="8" value="tlc"/>
-                <element label="University Library" sequence="9" value="university_library"/>
-                <element label="University Registrar" sequence="10" value="university_registrar"/>
-                <element label="--Other--" sequence="11" value="other"/>
-            </choice>
-        </element>
-        <element label="Details" max_length="40" name="details" type="string"/>
+        <element label="Department" mandatory="true" max_length="40" name="department" reference="x_casus_callref_department" type="reference"/>
         <element default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
-        <element choice="3" dependent="department" dependent_on_field="department" label="Reason" max_length="40" name="reason" type="choice" use_dependent_field="true">
+        <element active="false" choice="3" dependent="department" dependent_on_field="department" label="Reason" max_length="40" name="reason" type="choice" use_dependent_field="true">
             <choice>
                 <element dependent_value="academic_advising_center" label="Academic Advising/Smart Planner" value="academic_advising"/>
                 <element dependent_value="cce" label="Account Creation Issue" value="account_creation_issue"/>

@@ -4,32 +4,47 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>department_name</element>
-            <list_id display_value="x_casus_callref_department" element="NULL" name="x_casus_callref_department" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">62935b380f1fb60012e4348ce1050e8b</list_id>
+            <list_id display_value="x_casus_callref_department" element="NULL" name="x_casus_callref_department" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">4b95466d6f7fb240ad6cd4a21c3ee439</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
             <sys_created_by>gg622</sys_created_by>
-            <sys_created_on>2017-06-09 18:46:42</sys_created_on>
-            <sys_id>a6935b380f1fb60012e4348ce1050e8b</sys_id>
+            <sys_created_on>2017-07-06 17:32:47</sys_created_on>
+            <sys_id>8f95466d6f7fb240ad6cd4a21c3ee439</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>gg622</sys_updated_by>
-            <sys_updated_on>2017-06-09 18:46:42</sys_updated_on>
+            <sys_updated_on>2017-07-06 17:32:47</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>pinned</element>
-            <list_id display_value="x_casus_callref_department" element="NULL" name="x_casus_callref_department" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">62935b380f1fb60012e4348ce1050e8b</list_id>
+            <element>popularity</element>
+            <list_id display_value="x_casus_callref_department" element="NULL" name="x_casus_callref_department" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">4b95466d6f7fb240ad6cd4a21c3ee439</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
             <sum>false</sum>
             <sys_created_by>gg622</sys_created_by>
-            <sys_created_on>2017-06-09 18:46:42</sys_created_on>
-            <sys_id>2a935b380f1fb60012e4348ce1050e8b</sys_id>
+            <sys_created_on>2017-07-06 17:32:47</sys_created_on>
+            <sys_id>0395466d6f7fb240ad6cd4a21c3ee43a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>gg622</sys_updated_by>
-            <sys_updated_on>2017-06-09 18:46:42</sys_updated_on>
+            <sys_updated_on>2017-07-06 17:32:47</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>pinned</element>
+            <list_id display_value="x_casus_callref_department" element="NULL" name="x_casus_callref_department" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">4b95466d6f7fb240ad6cd4a21c3ee439</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-07-06 17:32:47</sys_created_on>
+            <sys_id>8395466d6f7fb240ad6cd4a21c3ee43a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-07-06 17:32:47</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -43,10 +58,10 @@
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>gg622</sys_created_by>
-            <sys_created_on>2017-06-09 18:46:42</sys_created_on>
-            <sys_customer_update>false</sys_customer_update>
+            <sys_created_on>2017-07-06 17:32:47</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
             <sys_domain>global</sys_domain>
-            <sys_id>62935b380f1fb60012e4348ce1050e8b</sys_id>
+            <sys_id>4b95466d6f7fb240ad6cd4a21c3ee439</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_casus_callref_department</sys_name>
             <sys_package display_value="Service Desk Call Referrals" source="x_casus_callref">158840a62b69e2009ecc78cef6da155d</sys_package>
@@ -55,7 +70,7 @@
             <sys_scope display_value="Service Desk Call Referrals">158840a62b69e2009ecc78cef6da155d</sys_scope>
             <sys_update_name>sys_ui_list_x_casus_callref_department_null</sys_update_name>
             <sys_updated_by>gg622</sys_updated_by>
-            <sys_updated_on>2017-06-09 18:46:42</sys_updated_on>
+            <sys_updated_on>2017-07-06 17:32:47</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>

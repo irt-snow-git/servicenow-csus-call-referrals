@@ -11,7 +11,7 @@
 	return '';  // return the calculated value
 
 })(current);</calculation>
-        <choice>3</choice>
+        <choice/>
         <choice_field/>
         <choice_table/>
         <column_label>Department</column_label>
@@ -30,7 +30,7 @@
         <element>department</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <internal_type display_value="Choice">choice</internal_type>
+        <internal_type display_value="Reference">reference</internal_type>
         <mandatory>true</mandatory>
         <max_length>40</max_length>
         <name>x_casus_callref_call_referrals</name>
@@ -38,7 +38,7 @@
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
-        <reference/>
+        <reference display_value="" name="x_casus_callref_department">x_casus_callref_department</reference>
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
@@ -51,17 +51,17 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>gg622</sys_created_by>
         <sys_created_on>2016-09-01 22:40:58</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
+        <sys_customer_update>true</sys_customer_update>
         <sys_id>62e1c5e60fa1e60012e4348ce1050e26</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>Department</sys_name>
         <sys_package display_value="Service Desk Call Referrals" source="x_casus_callref">158840a62b69e2009ecc78cef6da155d</sys_package>
         <sys_policy/>
-        <sys_replace_on_upgrade>true</sys_replace_on_upgrade>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Service Desk Call Referrals">158840a62b69e2009ecc78cef6da155d</sys_scope>
         <sys_update_name>sys_dictionary_x_casus_callref_call_referrals_department</sys_update_name>
-        <sys_updated_by>nicholasmyers</sys_updated_by>
-        <sys_updated_on>2016-10-05 22:27:05</sys_updated_on>
+        <sys_updated_by>gg622</sys_updated_by>
+        <sys_updated_on>2017-07-05 22:47:01</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
