@@ -8,24 +8,17 @@
         <script><![CDATA[var myApp = angular.module('myApp', []);
 var departmentReferences = [];
 departmentReferences = getDepartmentReferences(); 
-console.log(departmentReferences);
+
 // - - - Begin Controller - - - //
 myApp.controller('CallReferralsController', ['$scope', function ($scope) {
-    
 	$scope.async = 0;
-	$scope.departmentsAll = [];
-	$scope.buttonCSS = "btn-grey btn btn-lg col-sm-9";
-	$scope.pinCSS = "btn btn-pin col-sm-1";
 	$scope.depts = [];
 	$scope.depts = departmentReferences;
 	$scope.customOrder = "name";
 	$scope.async = 1;
-	// - - - -End Init - - - -//
+	// - - - - End Init - - - -//
 	
-	
-	$scope.setActiveButton = function(dept, button) {
-		
-	};
+	// - - - - Functions - - -//
 	$scope.pin = function (dept) {	
 		if (dept.pinned == '0') {dept.pinned = '1';} else {dept.pinned = '0';}
 		var ajax = new GlideAjax('x_casus_callref.retrieveSubmitRecords');
@@ -35,25 +28,28 @@ myApp.controller('CallReferralsController', ['$scope', function ($scope) {
 			});
 		
 	};
-	//Calls script include to submit records manually
+	
 	$scope.submit = function (dept) {			
 			//Call to server to actually submit
 			var ajax = new GlideAjax('x_casus_callref.retrieveSubmitRecords');
 			ajax.addParam('sysparm_name','submitRecord');
 			ajax.addParam('sysparm_department', dept.sys_id);
-			ajax.getXML(function ()  {
-			});
+			ajax.getXML(function ()  { });
+			//Some magic math to give low scores a bigger boost in popularity, higher scores less
+			var currentScore = parseInt(dept.popularity);
+			var numSub = Math.floor(currentScore + (Math.log(currentScore) * 15));
+			var bonus = Math.round(80/(numSub-currentScore)) + 1;
+			if (bonus === Infinity) bonus = 15; //Edge case
+			dept.popularity = currentScore + bonus;	
 	};
+	// - - -END Functions - - - //
 }])// - - -END Controller- - - //
-
 
 ;//- - - - -End App- - - - -//
 
 
 // - - - Handlers and Other Functions - - - //
 
-//Handles the XML call that retrieves supply sys_ids and supply_types
-//Assigns them to dat global supplyReferences 
 function handleGetDepartments(response) {
 	var departments = response.responseXML.getElementsByTagName("department");
 	for (var i = 0; i < departments.length; i++ ) {
@@ -73,11 +69,8 @@ function handleGetDepartments(response) {
 			console.log("Pinned ->" + ref.name);
 		}
 		departmentReferences.push(ref);
-	}//End For
-	
+	}//End For//
 }
-
-// - - - - End Handlers - - - - //
 
 /*
 Uses a global variable to store all the supplies
@@ -96,7 +89,7 @@ function getDepartmentReferences() {
         <sys_created_on>2017-06-08 20:24:34</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>91ded6e46f1bb600ad6cd4a21c3ee4fa</sys_id>
-        <sys_mod_count>45</sys_mod_count>
+        <sys_mod_count>49</sys_mod_count>
         <sys_name>x_casus_callref.angular_controller</sys_name>
         <sys_package display_value="Service Desk Call Referrals" source="x_casus_callref">158840a62b69e2009ecc78cef6da155d</sys_package>
         <sys_policy/>
@@ -104,7 +97,7 @@ function getDepartmentReferences() {
         <sys_scope display_value="Service Desk Call Referrals">158840a62b69e2009ecc78cef6da155d</sys_scope>
         <sys_update_name>sys_ui_script_91ded6e46f1bb600ad6cd4a21c3ee4fa</sys_update_name>
         <sys_updated_by>gg622</sys_updated_by>
-        <sys_updated_on>2017-07-06 21:00:00</sys_updated_on>
+        <sys_updated_on>2017-07-06 22:34:07</sys_updated_on>
         <use_scoped_format>false</use_scoped_format>
     </sys_ui_script>
 </record_update>

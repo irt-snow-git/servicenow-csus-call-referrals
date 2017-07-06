@@ -217,7 +217,8 @@ body {
 	
 	<div class="container full-height" id="main-div">
 		<div ng-controller="CallReferralsController">
-			<!-- Options Panel -->
+			
+			<!-- - - - - - Options Panel - - - - - - -->
 			<div class="container col-sm-3" style="position: fixed;">
 				<div class="panel panel-shadow panel-slide">
 					<h3>Search  </h3>
@@ -236,9 +237,9 @@ body {
 					</form>
 				</div>
 			</div>
-			<!-- End Options Panel-->
+			<!-- - - - - -End Options Panel - - - - - -->
 			
-			<!-- Departments List Panel -->
+			<!-- - - - -  Departments List Panel - - -->
 			<div class="panel panel-shadow col-sm-8 col-sm-offset-1" style="left: 30%;">
 				<div class="center-block col-sm-12 ng-cloak" style="padding-bottom: 25px;">
 					<div ng-repeat="dept in depts | orderBy: ['-pinned', customOrder] | filter:searchText track by $index" style="padding:30px">
@@ -267,7 +268,7 @@ body {
 					</div>
 				</div>
 			</div>
-			<!-- End Departments List Panel -->
+			<!-- - - - -  End Departments List Panel - - - -  -->
 		
 			
 		</div>
@@ -282,7 +283,7 @@ body {
         <sys_created_on>2017-06-08 20:29:22</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>68ed92e46f1bb600ad6cd4a21c3ee4e7</sys_id>
-        <sys_mod_count>172</sys_mod_count>
+        <sys_mod_count>175</sys_mod_count>
         <sys_name>Submit Call Referral</sys_name>
         <sys_package display_value="Service Desk Call Referrals" source="x_casus_callref">158840a62b69e2009ecc78cef6da155d</sys_package>
         <sys_policy/>
@@ -290,6 +291,6 @@ body {
         <sys_scope display_value="Service Desk Call Referrals">158840a62b69e2009ecc78cef6da155d</sys_scope>
         <sys_update_name>sys_ui_page_68ed92e46f1bb600ad6cd4a21c3ee4e7</sys_update_name>
         <sys_updated_by>gg622</sys_updated_by>
-        <sys_updated_on>2017-07-06 22:18:06</sys_updated_on>
+        <sys_updated_on>2017-07-06 22:23:46</sys_updated_on>
     </sys_ui_page>
 </record_update>
