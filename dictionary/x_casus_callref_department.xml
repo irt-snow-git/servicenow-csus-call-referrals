@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
     <element label="Department" max_length="40" name="x_casus_callref_department" type="collection">
-        <element display="true" label="Name" mandatory="true" max_length="40" name="department_name" type="string" unique="true"/>
+        <element display="true" label="Name" mandatory="true" max_length="100" name="department_name" type="string" unique="true"/>
         <element label="Pinned" max_length="40" name="pinned" type="boolean"/>
         <element default="0" label="Popularity" max_length="40" name="popularity" type="integer"/>
         <index name="index">
