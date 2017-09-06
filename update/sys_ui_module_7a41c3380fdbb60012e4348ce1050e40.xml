@@ -2,9 +2,9 @@
 <record_update sys_domain="global" table="sys_ui_module">
     <sys_ui_module action="INSERT_OR_UPDATE">
         <active>true</active>
-        <application display_value="Service Desk Call Referrals">ab88882a2b69e2009ecc78cef6da1546</application>
+        <application display_value="SA Work Tracking">ab88882a2b69e2009ecc78cef6da1546</application>
         <filter/>
-        <name>departments</name>
+        <name>Work Types</name>
         <order/>
         <path/>
         <path_relative_to_root>false</path_relative_to_root>
@@ -12,18 +12,18 @@
         <sys_class_name>sys_ui_module</sys_class_name>
         <sys_created_by>gg622</sys_created_by>
         <sys_created_on>2017-06-09 17:26:43</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
+        <sys_customer_update>true</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>7a41c3380fdbb60012e4348ce1050e40</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>departments</sys_name>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Work Types</sys_name>
         <sys_package display_value="Service Desk Call Referrals" source="x_casus_callref">158840a62b69e2009ecc78cef6da155d</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Service Desk Call Referrals">158840a62b69e2009ecc78cef6da155d</sys_scope>
         <sys_update_name>sys_ui_module_7a41c3380fdbb60012e4348ce1050e40</sys_update_name>
-        <sys_updated_by>gg622</sys_updated_by>
-        <sys_updated_on>2017-06-09 17:26:43</sys_updated_on>
+        <sys_updated_by>nicholasmyers</sys_updated_by>
+        <sys_updated_on>2017-09-06 18:34:59</sys_updated_on>
         <table>x_casus_callref_department</table>
         <uncancelable>false</uncancelable>
         <view_name/>

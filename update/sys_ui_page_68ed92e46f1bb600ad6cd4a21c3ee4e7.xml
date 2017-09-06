@@ -5,7 +5,7 @@
         <client_script/>
         <description>Allows quick submission of call referrals with fancy buttons. </description>
         <direct>false</direct>
-        <endpoint>x_casus_callref_Submit Call Referral.do</endpoint>
+        <endpoint>x_casus_callref_Submit Work Performed.do</endpoint>
         <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
 <j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
 <script language="javascript" src="https://code.angularjs.org/1.4.0-beta.4/angular.js" />
@@ -276,21 +276,21 @@ body {
 </div>
 
 </j:jelly>]]></html>
-        <name>Submit Call Referral</name>
+        <name>Submit Work Performed</name>
         <processing_script/>
         <sys_class_name>sys_ui_page</sys_class_name>
         <sys_created_by>gg622</sys_created_by>
         <sys_created_on>2017-06-08 20:29:22</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>68ed92e46f1bb600ad6cd4a21c3ee4e7</sys_id>
-        <sys_mod_count>175</sys_mod_count>
-        <sys_name>Submit Call Referral</sys_name>
+        <sys_mod_count>176</sys_mod_count>
+        <sys_name>Submit Work Performed</sys_name>
         <sys_package display_value="Service Desk Call Referrals" source="x_casus_callref">158840a62b69e2009ecc78cef6da155d</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Service Desk Call Referrals">158840a62b69e2009ecc78cef6da155d</sys_scope>
         <sys_update_name>sys_ui_page_68ed92e46f1bb600ad6cd4a21c3ee4e7</sys_update_name>
-        <sys_updated_by>gg622</sys_updated_by>
-        <sys_updated_on>2017-07-06 22:23:46</sys_updated_on>
+        <sys_updated_by>nicholasmyers</sys_updated_by>
+        <sys_updated_on>2017-09-06 18:33:32</sys_updated_on>
     </sys_ui_page>
 </record_update>
