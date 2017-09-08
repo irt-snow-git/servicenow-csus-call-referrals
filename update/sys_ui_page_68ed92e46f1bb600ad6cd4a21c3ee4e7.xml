@@ -59,8 +59,8 @@ body {
 }
 	
 .btn-submit-other {
-	padding: 5px;
-	background-color: seagreen;
+	padding: 5px !important;
+	background-color: steelblue;
 	letter-spacing: 1px;
 	color: white;
 	transition: background-color .5s, box-shadow .5s, color .5s;
@@ -69,8 +69,9 @@ body {
 }
 	
 .btn-submit-other:hover {
-	color: black;
-	background-color: #bcd7bc;
+	color: white;
+	background-color: steelblue;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
 	}
 	
 .fav {
@@ -326,7 +327,7 @@ body {
         <sys_created_on>2017-06-08 20:29:22</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>68ed92e46f1bb600ad6cd4a21c3ee4e7</sys_id>
-        <sys_mod_count>184</sys_mod_count>
+        <sys_mod_count>189</sys_mod_count>
         <sys_name>Submit Work Performed</sys_name>
         <sys_package display_value="Service Desk Call Referrals" source="x_casus_callref">158840a62b69e2009ecc78cef6da155d</sys_package>
         <sys_policy/>
@@ -334,6 +335,6 @@ body {
         <sys_scope display_value="Service Desk Call Referrals">158840a62b69e2009ecc78cef6da155d</sys_scope>
         <sys_update_name>sys_ui_page_68ed92e46f1bb600ad6cd4a21c3ee4e7</sys_update_name>
         <sys_updated_by>gg622</sys_updated_by>
-        <sys_updated_on>2017-09-08 23:13:04</sys_updated_on>
+        <sys_updated_on>2017-09-08 23:18:58</sys_updated_on>
     </sys_ui_page>
 </record_update>
