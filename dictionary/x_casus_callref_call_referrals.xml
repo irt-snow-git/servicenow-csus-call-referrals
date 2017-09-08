@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element label="Work Completed" max_length="40" name="x_casus_callref_call_referrals" type="collection">
-        <element label="Work" mandatory="true" max_length="40" name="department" reference="x_casus_callref_department" type="reference"/>
-        <element default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
-        <element active="false" choice="3" dependent="department" dependent_on_field="department" label="Reason" max_length="40" name="reason" type="choice" use_dependent_field="true">
+    <element extends="task" label="Work Completed" max_length="40" name="x_casus_callref_call_referrals" type="collection">
+        <element label="Work" mandatory="true" max_length="32" name="department" reference="x_casus_callref_department" type="reference"/>
+        <element active="false" choice="3" dependent="department" dependent_on_field="department" label="Reason" max_length="40" name="reason" type="choice">
             <choice>
                 <element dependent_value="academic_advising_center" label="Academic Advising/Smart Planner" value="academic_advising"/>
                 <element dependent_value="cce" label="Account Creation Issue" value="account_creation_issue"/>
