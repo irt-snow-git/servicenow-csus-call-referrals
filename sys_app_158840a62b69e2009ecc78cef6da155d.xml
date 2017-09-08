@@ -15,21 +15,21 @@
         <scoped_administration>false</scoped_administration>
         <short_description/>
         <source>x_casus_callref</source>
-        <store_correlation_id>REPOAPP0000029755</store_correlation_id>
+        <store_correlation_id>REPOAPP0000035753</store_correlation_id>
         <store_url/>
         <sys_class_name>sys_app</sys_class_name>
         <sys_code/>
         <sys_created_by>longlim</sys_created_by>
         <sys_created_on>2016-09-01 18:27:45</sys_created_on>
         <sys_id>158840a62b69e2009ecc78cef6da155d</sys_id>
-        <sys_mod_count>6</sys_mod_count>
-        <sys_updated_by>nicholasmyers</sys_updated_by>
-        <sys_updated_on>2017-09-06 23:56:36</sys_updated_on>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_updated_by>gg622</sys_updated_by>
+        <sys_updated_on>2017-09-08 18:17:04</sys_updated_on>
         <template/>
         <trackable>true</trackable>
         <user_role display_value="x_casus_callref.user" name="x_casus_callref.user">1188882a2b69e2009ecc78cef6da1516</user_role>
         <vendor/>
         <vendor_prefix/>
-        <version>2.0.1</version>
+        <version>2.1.0</version>
     </sys_app>
 </record_update>
