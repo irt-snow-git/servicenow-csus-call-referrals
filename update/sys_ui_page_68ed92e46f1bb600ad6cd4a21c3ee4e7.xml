@@ -121,6 +121,23 @@ body {
 	height: 30px;
 	font-size: 15px;
 }
+	
+.btn-close {
+	padding: 0;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    float: right;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .2;
+    -webkit-appearance: none;
+    margin-top: -15px;
+    margin-right: -9px;
+}
 
 [type="radio"]:not(:checked)+label, [type="radio"]:checked+label {
     position: relative;
@@ -243,7 +260,7 @@ body {
   right: 0;
   bottom: 0;
   top: 0;
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0,0,0,0.4);
 }
 	
 
@@ -308,15 +325,20 @@ body {
 					<!-- 'Other' button always shows, regardless of filter -->
 					<div style="padding:30px">
 						<div class="chunk col-sm-12">
-							<div class="panel panel-shadow panel-other">
+							<!-- Panel -->
+							<div id="details_panel" class="panel panel-shadow panel-other clickOutside" ng-show="isPopupVisible">
+								<button type="button" aria-label="Close" ng-click="closePopup()" class="btn btn-close pull-right">
+									<span aria-hidden="true">x</span>
+								</button>
 								<h4> Provide a short description </h4>
 								
-								<input type="text" class="form-control"/>
+								<input id="details_input" type="text" class="form-control" ng-model="short_description"/>
 								<button class="btn btn-submit-other"> Submit</button>
 							</div>
-							<button style="padding: 10px;background-color: darkseagreen !important;" id="Other_btn" 
+							<!-- End Panel -->
+							<button style="padding: 10px;background-color: darkseagreen !important;" id="other_btn" 
 									type="button" class="btn-grey btn btn-lg col-sm-9" 
-									ng-click="">Other
+									ng-click="submitOther()">Other
 							</button>
 						</div>	
 					</div>
@@ -325,13 +347,14 @@ body {
 			</div>
 			<!-- - - - -  End Departments List Panel - - - -  -->
 		
-			
+			<div id="mask" ng-hide="isPopupVisible == false">
+			</div>
 		</div>
 	</div>
+
 </div>
 
-<div id="mask">
-</div>
+
 
 </j:jelly>]]></html>
         <name>Submit Work Performed</name>
@@ -341,7 +364,7 @@ body {
         <sys_created_on>2017-06-08 20:29:22</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>68ed92e46f1bb600ad6cd4a21c3ee4e7</sys_id>
-        <sys_mod_count>191</sys_mod_count>
+        <sys_mod_count>212</sys_mod_count>
         <sys_name>Submit Work Performed</sys_name>
         <sys_package display_value="Service Desk Call Referrals" source="x_casus_callref">158840a62b69e2009ecc78cef6da155d</sys_package>
         <sys_policy/>
@@ -349,6 +372,6 @@ body {
         <sys_scope display_value="Service Desk Call Referrals">158840a62b69e2009ecc78cef6da155d</sys_scope>
         <sys_update_name>sys_ui_page_68ed92e46f1bb600ad6cd4a21c3ee4e7</sys_update_name>
         <sys_updated_by>gg622</sys_updated_by>
-        <sys_updated_on>2017-09-11 16:13:50</sys_updated_on>
+        <sys_updated_on>2017-09-11 19:13:59</sys_updated_on>
     </sys_ui_page>
 </record_update>
