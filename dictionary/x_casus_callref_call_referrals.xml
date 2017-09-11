@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element extends="task" label="Work Completed" max_length="40" name="x_casus_callref_call_referrals" type="collection">
+    <element extends="task" label="Work Completed" max_length="40" name="x_casus_callref_call_referrals" sizeclass="6" type="collection">
         <element label="Work" mandatory="true" max_length="32" name="department" reference="x_casus_callref_department" type="reference"/>
         <element active="false" choice="3" dependent="department" dependent_on_field="department" label="Reason" max_length="40" name="reason" type="choice">
             <choice>
