@@ -5,13 +5,13 @@
             <element>number</element>
             <position>0</position>
             <sys_created_by>gg622</sys_created_by>
-            <sys_created_on>2017-09-08 20:14:54</sys_created_on>
-            <sys_id>71701c966f054700ad6cd4a21c3ee497</sys_id>
+            <sys_created_on>2017-09-11 19:19:05</sys_created_on>
+            <sys_id>617027076f098700ad6cd4a21c3ee431</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_casus_callref_call_referrals" sys_domain="global" view="Default view">38d2c5e60fa1e60012e4348ce1050e2d</sys_ui_section>
             <sys_updated_by>gg622</sys_updated_by>
-            <sys_updated_on>2017-09-08 20:14:54</sys_updated_on>
+            <sys_updated_on>2017-09-11 19:19:05</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -19,55 +19,69 @@
             <element>department</element>
             <position>1</position>
             <sys_created_by>gg622</sys_created_by>
-            <sys_created_on>2017-09-08 20:14:54</sys_created_on>
-            <sys_id>f1701c966f054700ad6cd4a21c3ee497</sys_id>
+            <sys_created_on>2017-09-11 19:19:05</sys_created_on>
+            <sys_id>e17027076f098700ad6cd4a21c3ee431</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_casus_callref_call_referrals" sys_domain="global" view="Default view">38d2c5e60fa1e60012e4348ce1050e2d</sys_ui_section>
             <sys_updated_by>gg622</sys_updated_by>
-            <sys_updated_on>2017-09-08 20:14:54</sys_updated_on>
+            <sys_updated_on>2017-09-11 19:19:05</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>short_description</element>
+            <position>2</position>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-09-11 19:19:05</sys_created_on>
+            <sys_id>657027076f098700ad6cd4a21c3ee431</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_casus_callref_call_referrals" sys_domain="global" view="Default view">38d2c5e60fa1e60012e4348ce1050e2d</sys_ui_section>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-09-11 19:19:05</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>2</position>
+            <position>3</position>
             <sys_created_by>gg622</sys_created_by>
-            <sys_created_on>2017-09-08 20:14:54</sys_created_on>
-            <sys_id>75701c966f054700ad6cd4a21c3ee497</sys_id>
+            <sys_created_on>2017-09-11 19:19:05</sys_created_on>
+            <sys_id>e57027076f098700ad6cd4a21c3ee431</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_casus_callref_call_referrals" sys_domain="global" view="Default view">38d2c5e60fa1e60012e4348ce1050e2d</sys_ui_section>
             <sys_updated_by>gg622</sys_updated_by>
-            <sys_updated_on>2017-09-08 20:14:54</sys_updated_on>
+            <sys_updated_on>2017-09-11 19:19:05</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>sys_created_by</element>
-            <position>3</position>
+            <position>4</position>
             <sys_created_by>gg622</sys_created_by>
-            <sys_created_on>2017-09-08 20:14:54</sys_created_on>
-            <sys_id>f5701c966f054700ad6cd4a21c3ee497</sys_id>
+            <sys_created_on>2017-09-11 19:19:05</sys_created_on>
+            <sys_id>697027076f098700ad6cd4a21c3ee431</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_casus_callref_call_referrals" sys_domain="global" view="Default view">38d2c5e60fa1e60012e4348ce1050e2d</sys_ui_section>
             <sys_updated_by>gg622</sys_updated_by>
-            <sys_updated_on>2017-09-08 20:14:54</sys_updated_on>
+            <sys_updated_on>2017-09-11 19:19:05</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>assigned_to</element>
-            <position>4</position>
+            <position>5</position>
             <sys_created_by>gg622</sys_created_by>
-            <sys_created_on>2017-09-08 20:14:54</sys_created_on>
-            <sys_id>79701c966f054700ad6cd4a21c3ee497</sys_id>
+            <sys_created_on>2017-09-11 19:19:05</sys_created_on>
+            <sys_id>e97027076f098700ad6cd4a21c3ee431</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_casus_callref_call_referrals" sys_domain="global" view="Default view">38d2c5e60fa1e60012e4348ce1050e2d</sys_ui_section>
             <sys_updated_by>gg622</sys_updated_by>
-            <sys_updated_on>2017-09-08 20:14:54</sys_updated_on>
+            <sys_updated_on>2017-09-11 19:19:05</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -82,7 +96,7 @@
             <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_id>38d2c5e60fa1e60012e4348ce1050e2d</sys_id>
-            <sys_mod_count>5</sys_mod_count>
+            <sys_mod_count>6</sys_mod_count>
             <sys_name>x_casus_callref_call_referrals</sys_name>
             <sys_overrides display_value="">global</sys_overrides>
             <sys_package display_value="Service Desk Call Referrals" source="x_casus_callref">158840a62b69e2009ecc78cef6da155d</sys_package>
@@ -91,7 +105,7 @@
             <sys_scope display_value="Service Desk Call Referrals">158840a62b69e2009ecc78cef6da155d</sys_scope>
             <sys_update_name>sys_ui_section_38d2c5e60fa1e60012e4348ce1050e2d</sys_update_name>
             <sys_updated_by>gg622</sys_updated_by>
-            <sys_updated_on>2017-09-08 20:14:54</sys_updated_on>
+            <sys_updated_on>2017-09-11 19:19:05</sys_updated_on>
             <sys_user/>
             <title>true</title>
             <view display_value="Default view" name="NULL">Default view</view>

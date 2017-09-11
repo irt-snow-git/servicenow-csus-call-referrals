@@ -333,12 +333,12 @@ body {
 								<h4> Provide a short description </h4>
 								
 								<input id="details_input" type="text" class="form-control" ng-model="short_description"/>
-								<button class="btn btn-submit-other"> Submit</button>
+								<button class="btn btn-submit-other" ng-click="submitOther()"> Submit</button>
 							</div>
 							<!-- End Panel -->
 							<button style="padding: 10px;background-color: darkseagreen !important;" id="other_btn" 
 									type="button" class="btn-grey btn btn-lg col-sm-9" 
-									ng-click="submitOther()">Other
+									ng-click="openPopup()">Other
 							</button>
 						</div>	
 					</div>
@@ -364,7 +364,7 @@ body {
         <sys_created_on>2017-06-08 20:29:22</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>68ed92e46f1bb600ad6cd4a21c3ee4e7</sys_id>
-        <sys_mod_count>212</sys_mod_count>
+        <sys_mod_count>213</sys_mod_count>
         <sys_name>Submit Work Performed</sys_name>
         <sys_package display_value="Service Desk Call Referrals" source="x_casus_callref">158840a62b69e2009ecc78cef6da155d</sys_package>
         <sys_policy/>
@@ -372,6 +372,6 @@ body {
         <sys_scope display_value="Service Desk Call Referrals">158840a62b69e2009ecc78cef6da155d</sys_scope>
         <sys_update_name>sys_ui_page_68ed92e46f1bb600ad6cd4a21c3ee4e7</sys_update_name>
         <sys_updated_by>gg622</sys_updated_by>
-        <sys_updated_on>2017-09-11 19:13:59</sys_updated_on>
+        <sys_updated_on>2017-09-11 19:34:41</sys_updated_on>
     </sys_ui_page>
 </record_update>
