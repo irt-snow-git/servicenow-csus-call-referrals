@@ -1,48 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element extends="task" label="Work Completed" max_length="40" name="x_casus_callref_call_referrals" sizeclass="7" type="collection">
+    <element extends="task" label="Work Completed" max_length="40" name="x_casus_callref_call_referrals" sizeclass="12" type="collection">
         <element label="Work" mandatory="true" max_length="32" name="department" reference="x_casus_callref_department" type="reference"/>
-        <element active="false" choice="3" dependent="department" dependent_on_field="department" label="Reason" max_length="40" name="reason" type="choice">
-            <choice>
-                <element dependent_value="academic_advising_center" label="Academic Advising/Smart Planner" value="academic_advising"/>
-                <element dependent_value="cce" label="Account Creation Issue" value="account_creation_issue"/>
-                <element dependent_value="admissions_and_outreach" label="Account Re-enablement" value="account_reenable"/>
-                <element dependent_value="atcs" label="Broken Course Links" value="broken_course_links"/>
-                <element dependent_value="university_library" label="Checkout Fees" value="checkout_fees"/>
-                <element dependent_value="learning_space_services" label="Classroom Assistance" value="classroom_assistance"/>
-                <element dependent_value="atcs" label="Course Activation" value="course_activation"/>
-                <element dependent_value="atcs" label="Course Setup" value="course_setup"/>
-                <element dependent_value="other" label="General Campus Information" value="campus_info"/>
-                <element dependent_value="atcs" label="Incorrect Display Name in SacCT" value="incorrect_name"/>
-                <element dependent_value="admissions_and_outreach" label="Incorrect Record Data" value="incorrect_record_data"/>
-                <element dependent_value="tlc" label="Mediasite Support" value="mediasite"/>
-                <element dependent_value="hr" label="Name Change" value="name_change_hr"/>
-                <element dependent_value="hr" label="No Job Record in CMS" value="no_job_record"/>
-                <element dependent_value="cce" label="Open University" value="open_university"/>
-                <element dependent_value="hr" label="POI Account" value="poi_account"/>
-                <element dependent_value="stc" label="Poster Printing" value="poster_printing"/>
-                <element dependent_value="tlc" label="Software Assistance" value="software_assistance_stc"/>
-                <element dependent_value="stc" label="Software Assistance" value="software_assistance_tlc"/>
-                <element dependent_value="bursars_office" label="Tax Forms" value="tax_forms"/>
-                <element dependent_value="admissions_and_outreach" label="To-Do List" value="todo_list"/>
-                <element dependent_value="university_registrar" label="Transcripts" value="transcripts"/>
-                <element dependent_value="hr" label="Update DOB" value="update_dob_hr"/>
-                <element dependent_value="tlc" label="Video Conversion" value="video_conversion"/>
-                <element dependent_value="cce" label="Water Programs" value="water_programs"/>
-                <element dependent_value="stc" label="Workshop Information" value="workshop_info"/>
-                <element dependent_value="other" label="--Other--" sequence="100" value="other"/>
-                <element dependent_value="admissions_and_outreach" label="Admissions Inquiry" sequence="100" value="general_admissions"/>
-                <element dependent_value="atcs" label="ATCS Inquiry" sequence="100" value="general_atcs"/>
-                <element dependent_value="cce" label="CCE Inquiry" sequence="100" value="general_cce"/>
-                <element dependent_value="bursars_office" label="Financial Aid Inquiry" sequence="100" value="general_bursars"/>
-                <element dependent_value="hr" label="Human Resources Inquiry" sequence="100" value="general_hr"/>
-                <element dependent_value="learning_space_services" label="Learning Space Services Inquiry" sequence="100" value="general_learning_space_services"/>
-                <element dependent_value="university_library" label="Library Inquiry" sequence="100" value="general_library"/>
-                <element dependent_value="university_registrar" label="Registration Inquiry" sequence="100" value="general_registration"/>
-                <element dependent_value="atcs" label="SacCT Inquiry" sequence="100" value="general_sacct"/>
-                <element dependent_value="stc" label="STC Inquiry" sequence="100" value="general_stc"/>
-                <element dependent_value="tlc" label="TLC Inquiry" sequence="100" value="general_tlc"/>
-            </choice>
-        </element>
+        <element label="Details" max_length="40" name="details" type="string"/>
     </element>
 </database>
