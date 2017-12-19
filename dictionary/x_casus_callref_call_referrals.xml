@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element extends="task" label="Work Completed" max_length="40" name="x_casus_callref_call_referrals" sizeclass="12" type="collection">
+    <element extends="task" label="Call Referral" max_length="40" name="x_casus_callref_call_referrals" sizeclass="20" type="collection">
         <element label="Work" mandatory="true" max_length="32" name="department" reference="x_casus_callref_department" type="reference"/>
         <element label="Details" max_length="40" name="details" type="string"/>
     </element>

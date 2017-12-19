@@ -11,7 +11,7 @@
         <delete_access>false</delete_access>
         <extension_model/>
         <is_extendable>false</is_extendable>
-        <label>Work Type</label>
+        <label>Call Referral Department</label>
         <live_feed_enabled>false</live_feed_enabled>
         <name>x_casus_callref_department</name>
         <number_ref/>
@@ -23,15 +23,15 @@
         <sys_created_on>2017-06-09 17:26:43</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>90900bb80fdbb60012e4348ce1050e40</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>Work Type</sys_name>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Call Referral Department</sys_name>
         <sys_package display_value="Service Desk Call Referrals" source="x_casus_callref">158840a62b69e2009ecc78cef6da155d</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Service Desk Call Referrals">158840a62b69e2009ecc78cef6da155d</sys_scope>
         <sys_update_name>sys_db_object_90900bb80fdbb60012e4348ce1050e40</sys_update_name>
         <sys_updated_by>nicholasmyers</sys_updated_by>
-        <sys_updated_on>2017-09-06 18:34:00</sys_updated_on>
+        <sys_updated_on>2017-12-19 20:22:38</sys_updated_on>
         <update_access>false</update_access>
         <user_role display_value="x_casus_callref.user" name="x_casus_callref.user">1188882a2b69e2009ecc78cef6da1516</user_role>
         <ws_access>true</ws_access>
